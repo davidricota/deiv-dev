@@ -7252,7 +7252,7 @@ form textarea:required:valid {
   align-items: center;
   justify-content: center;
   width: 100%;
-  font-size: clamp(2.5rem, 12vw, 36rem);
+  font-size: clamp(2.5rem, 12vw, 48rem);
   max-width: 75vw;
   margin: 0 auto;
   line-height: 1.05;

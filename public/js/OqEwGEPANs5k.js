@@ -473,7 +473,7 @@ $(function () {
   // Magnific Popup Start
   // --------------------------------------------- //
   $(".popup-trigger").magnificPopup({
-    type: "inline",
+    type: "ajax",
     fixedContentPos: true,
     fixedBgPos: true,
     overflowY: "scroll",

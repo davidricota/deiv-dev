@@ -1,0 +1,229 @@
+---
+export interface Props {
+  project: {
+    id: number;
+    slug: string;
+    title: string;
+    type: string;
+    date: string;
+    role: string;
+    client: string;
+    description: string;
+    challenge: string;
+    solution: string;
+    images: {
+      portrait: string;
+      landscape: string;
+      fullwidth: string[];
+      grid: string[];
+    };
+    feedback: {
+      author: string;
+      avatar: string;
+      position: string;
+      rating: number;
+      text: string;
+    };
+    projectUrl: string;
+  };
+}
+
+const { project } = Astro.props;
+---
+
+<div class="project">
+  <!-- Project Block - Title with Image Start -->
+  <div class="project__block no-padding no-margin project-image-bg">
+    <img
+      class="project-image-bg__portrait"
+      src={project.images.portrait}
+      alt="Project Illustration"
+    />
+    <img
+      class="project-image-bg__landscape"
+      src={project.images.landscape}
+      alt="Project Illustration"
+    />
+    <div class="project__title">
+      <h3 class="light">{project.title}</h3>
+    </div>
+  </div>
+  <!-- Project Block - Title with Image End -->
+
+  <!-- Project Block - Description Start -->
+  <div class="project__block grid-block grid-items">
+    <div class="project__data">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-12 col-xl-4">
+            <div class="container-fluid p-0">
+              <div class="row g-0">
+                <!-- project data single item -->
+                <div class="col-12 col-md-6 grid-item pdata__item">
+                  <p class="data__title tagline-chapter small type-basic-160lh">Type</p>
+                  <p class="data__descr small type-basic-160lh">{project.type}</p>
+                </div>
+                <!-- project data single item -->
+                <div class="col-12 col-md-6 grid-item pdata__item">
+                  <p class="data__title tagline-chapter small type-basic-160lh">Date</p>
+                  <p class="data__descr small type-basic-160lh">{project.date}</p>
+                </div>
+                <!-- project data single item -->
+                <div class="col-12 col-md-6 grid-item pdata__item">
+                  <p class="data__title tagline-chapter small type-basic-160lh">Role</p>
+                  <p class="data__descr small type-basic-160lh">{project.role}</p>
+                </div>
+                <!-- project data single item -->
+                <div class="col-12 col-md-6 grid-item pdata__item">
+                  <p class="data__title tagline-chapter small type-basic-160lh">Client</p>
+                  <p class="data__descr small type-basic-160lh">{project.client}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-8 grid-item">
+            <p class="type-basic-160lh">
+              {project.description}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Project Block - Description End -->
+
+  <!-- Project Block - Illustration Fullwidth Start -->
+  <div class="project__block no-margin">
+    <div class="project__illustration-xl">
+      <img src={project.images.fullwidth[0]} alt="Project Illustration" />
+    </div>
+  </div>
+  <!-- Project Block - Illustration Fullwidth End -->
+
+  <!-- Project Block - The Challenge Start -->
+  <div class="project__block pre-grid-items">
+    <div class="project__descr">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-12 col-xl-4">
+            <p class="project__subtitle tagline-chapter">The challenge</p>
+          </div>
+          <div class="col-12 col-xl-8">
+            <p class="type-basic-160lh">
+              {project.challenge}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Project Block - The Challenge End -->
+
+  <!-- Project Block - Illustrations Grid Start -->
+  <div class="project__block grid-block no-margin">
+    <div class="project__illustrations">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          {
+            project.images.grid.map((image, index) => (
+              <div
+                class={`col-12 col-md-6 ${project.images.grid.length > 2 ? "col-xl-3" : ""} grid-item`}
+              >
+                <div class="project__illustration">
+                  <img src={image} alt="Work Illustration" />
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Project Block - Illustrations Grid End -->
+
+  <!-- Project Block - My Solution Start -->
+  <div class="project__block">
+    <div class="project__descr">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-12 col-xl-4">
+            <p class="project__subtitle tagline-chapter">My solution</p>
+          </div>
+          <div class="col-12 col-xl-8">
+            <p class="type-basic-160lh">
+              {project.solution}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Project Block - My Solution End -->
+
+  <!-- Project Block - Illustration Fullwidth Start -->
+  <div class="project__block no-margin">
+    <div class="project__illustration-xl">
+      <img src={project.images.fullwidth[1]} alt="Project Illustration" />
+    </div>
+  </div>
+  <!-- Project Block - Illustration Fullwidth End -->
+
+  <!-- Project Block - Client's Feedback Start -->
+  <div class="project__block normal-size no-margin-bottom">
+    <div class="project__descr">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-12 col-xl-4">
+            <p class="project__subtitle image-top-subtitle tagline-chapter">Client's feedback</p>
+          </div>
+          <div class="col-12 col-xl-8">
+            <div class="project__feedback">
+              <div class="feedback__fauthor d-flex">
+                <div class="fauthor__avatar">
+                  <img src={project.feedback.avatar} alt="Review Author" />
+                </div>
+                <div class="fauthor__info d-flex flex-column justify-content-center">
+                  <h4 class="fauthor__name">{project.feedback.author}</h4>
+                  <p class="fauthor__position small">
+                    {project.feedback.position}
+                  </p>
+                  <div class="fauthor__rating d-flex">
+                    {
+                      Array.from({ length: project.feedback.rating }, (_, i) => (
+                        <i class="ph-fill ph-star" />
+                      ))
+                    }
+                  </div>
+                </div>
+              </div>
+              <div class="feedback__descr">
+                <p class="type-basic-160lh">
+                  {project.feedback.text}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- project divider line -->
+    <div class="project__divider"></div>
+  </div>
+  <!-- Project Block - Client's Feedback End -->
+
+  <!-- Project Block - Project Link Start -->
+  <div class="project__block small-size">
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+        <div class="col-12 d-flex justify-content-center">
+          <a class="btn btn-circle-text hover-circle" href={project.projectUrl} target="_blank">
+            <em></em>
+            <span class="btn-caption">Project page</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Project Block - Project Link End -->
+</div>
+

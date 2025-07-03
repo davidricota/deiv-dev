@@ -1,0 +1,131 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import portfolioData from "../../data/portfolio.js";
+---
+
+<Layout title="Portfolio | David Verta">
+  <main>
+    <!-- Portfolio Index Page Start -->
+    <section class="portfolio-index-page">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-12">
+            <div class="inner__content">
+              <div class="content__block">
+                <h1 class="section-title">Portfolio</h1>
+                <p class="section-subtitle">My latest projects and work</p>
+
+                <div class="portfolio-grid">
+                  {
+                    portfolioData.map((project) => (
+                      <div class="portfolio-item">
+                        <a href={`/portfolio/${project.slug}`} class="portfolio-link">
+                          <div class="portfolio-image">
+                            <img src={project.images.portrait} alt={project.title} />
+                          </div>
+                          <div class="portfolio-info">
+                            <h3>{project.title}</h3>
+                            <p>{project.type}</p>
+                            <span class="portfolio-date">{project.date}</span>
+                          </div>
+                        </a>
+                      </div>
+                    ))
+                  }
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Index Page End -->
+  </main>
+</Layout>
+
+<style>
+  .portfolio-index-page {
+    padding: 4rem 0;
+    min-height: 100vh;
+    background: var(--color-bg);
+  }
+
+  .section-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+  }
+
+  .section-subtitle {
+    font-size: 1.2rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 3rem;
+  }
+
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .portfolio-item {
+    background: var(--color-card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .portfolio-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .portfolio-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .portfolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .portfolio-item:hover .portfolio-image img {
+    transform: scale(1.05);
+  }
+
+  .portfolio-info {
+    padding: 1.5rem;
+  }
+
+  .portfolio-info h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+  }
+
+  .portfolio-info p {
+    color: var(--color-text-secondary);
+    margin-bottom: 0.5rem;
+  }
+
+  .portfolio-date {
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    font-weight: 500;
+  }
+</style>
+
