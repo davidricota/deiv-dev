@@ -50,7 +50,7 @@ gsap.registerPlugin(ScrollTrigger);
 const content = document.querySelector("body");
 const imgLoad = imagesLoaded(content);
 const loadingWrap = document.querySelector(".loading-wrap");
-const loadingItems = loadingWrap.querySelectorAll(".loading__item");
+const loadingItems = loadingWrap ? loadingWrap.querySelectorAll(".loading__item") : [];
 const fadeInItems = document.querySelectorAll(".loading__fade");
 
 function startLoader() {
@@ -134,30 +134,32 @@ gsap.ticker.lagSmoothing(0);
 // --------------------------------------------- //
 const toTop = document.querySelector("#to-top");
 
-toTop.addEventListener("click", function (event) {
-  event.preventDefault();
-});
+if (toTop) {
+  toTop.addEventListener("click", function (event) {
+    event.preventDefault();
+  });
 
-toTop.addEventListener("click", () =>
-  gsap.to(window, {
-    scrollTo: 0,
-    ease: "power4.inOut",
-    duration: 2,
-  })
-);
+  toTop.addEventListener("click", () =>
+    gsap.to(window, {
+      scrollTo: 0,
+      ease: "power4.inOut",
+      duration: 2,
+    })
+  );
 
-gsap.set(toTop, { opacity: 0 });
+  gsap.set(toTop, { opacity: 0 });
 
-gsap.to(toTop, {
-  opacity: 1,
-  autoAlpha: 1,
-  scrollTrigger: {
-    trigger: "body",
-    start: "top -20%",
-    end: "top -20%",
-    toggleActions: "play none reverse none",
-  },
-});
+  gsap.to(toTop, {
+    opacity: 1,
+    autoAlpha: 1,
+    scrollTrigger: {
+      trigger: "body",
+      start: "top -20%",
+      end: "top -20%",
+      toggleActions: "play none reverse none",
+    },
+  });
+}
 // --------------------------------------------- //
 // Scroll to Top Button End
 // --------------------------------------------- //
@@ -170,7 +172,7 @@ const stickySpace = document.querySelector(".stack-offset");
 const animation = gsap.timeline();
 let cardHeight;
 
-if (document.querySelector(".stack-item")) {
+if (cards.length && stickySpace) {
   function initCards() {
     animation.clear();
     cardHeight = cards[0].offsetHeight;
@@ -404,16 +406,19 @@ initMarquee();
 // ------------------------------------------------------------------------------ //
 // Parallax (apply parallax effect to any element with a data-speed attribute) Start
 // ------------------------------------------------------------------------------ //
-gsap.to("[data-speed]", {
-  y: (i, el) => (1 - parseFloat(el.getAttribute("data-speed"))) * ScrollTrigger.maxScroll(window),
-  ease: "none",
-  scrollTrigger: {
-    start: 0,
-    end: "max",
-    invalidateOnRefresh: true,
-    scrub: 0,
-  },
-});
+const dataSpeedElements = document.querySelectorAll("[data-speed]");
+if (dataSpeedElements.length) {
+  gsap.to(dataSpeedElements, {
+    y: (i, el) => (1 - parseFloat(el.getAttribute("data-speed"))) * ScrollTrigger.maxScroll(window),
+    ease: "none",
+    scrollTrigger: {
+      start: 0,
+      end: "max",
+      invalidateOnRefresh: true,
+      scrub: 0,
+    },
+  });
+}
 // --------------------------------------------- //
 // Parallax End
 // --------------------------------------------- //
@@ -452,7 +457,7 @@ $(window).on("load", function () {
   // Typed.js Plugin Settings Start
   // --------------------------------------------- //
   var animatedHeadline = $(".animated-type");
-  if (animatedHeadline.length) {
+  if (animatedHeadline.length && document.getElementById("typed")) {
     var typed = new Typed("#typed", {
       stringsElement: "#typed-strings",
       loop: true,
@@ -668,16 +673,18 @@ function loadTheme(theme) {
   root.setAttribute("color-scheme", `${theme}`);
 }
 
-themeBtn.addEventListener("click", () => {
-  let theme = getCurrentTheme();
-  if (theme === "dark") {
-    theme = "light";
-  } else {
-    theme = "dark";
-  }
-  localStorage.setItem("template.theme", `${theme}`);
-  loadTheme(theme);
-});
+if (themeBtn) {
+  themeBtn.addEventListener("click", () => {
+    let theme = getCurrentTheme();
+    if (theme === "dark") {
+      theme = "light";
+    } else {
+      theme = "dark";
+    }
+    localStorage.setItem("template.theme", `${theme}`);
+    loadTheme(theme);
+  });
+}
 
 window.addEventListener("DOMContentLoaded", () => {
   loadTheme(getCurrentTheme());
@@ -725,7 +732,7 @@ if (aboutImage) {
 const typingTitle = document.getElementById("typing-title");
 
 if (typingTitle) {
-  const texts = [".dev", ".deiv", "deiv.dev"];
+  const texts = [".dev", "deiv.dev", ".Deiv"];
   let textIndex = 0;
   let charIndex = 0;
   let isDeleting = false;

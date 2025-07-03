@@ -1,0 +1,21 @@
+{
+    "name": "Deiv Portfolio",
+    "short_name": "Deiv",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#141414",
+    "theme_color": "#BABEC8",
+    "description": "Portfolio de David Verta (.Deiv)",
+    "icons": [
+        {
+            "src": "/images/nRHoCwYx0acU.ico",
+            "sizes": "48x48 72x72 96x96 128x128 256x256",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "/images/WL9Z2Qsyd56d.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ]
+}
