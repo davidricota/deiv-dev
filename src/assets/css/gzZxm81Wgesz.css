@@ -225,22 +225,24 @@
   overflow: hidden;
   line-height: 1;
 }
-.loader__count span {
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  font: normal 800 4.6rem/0.9 var(--_font-accent);
+.loader__count span,
+.loader__count .count__text {
+  font-size: calc(2.5em + 10vw) !important;
+  font-weight: 800;
   color: var(--t-bright);
+  line-height: 1;
+  letter-spacing: -0.05em;
 }
-@media only screen and (min-width: 768px) {
-  .loader__count span {
-    font-size: 8rem;
+@media (min-width: 1200px) {
+  .loader__count span,
+  .loader__count .count__text {
+    font-size: 10em !important;
   }
 }
-@media only screen and (min-width: 1400px) {
-  .loader__count span {
-    font-size: 10rem;
+@media (max-width: 600px) {
+  .loader__count span,
+  .loader__count .count__text {
+    font-size: 4em !important;
   }
 }
 
