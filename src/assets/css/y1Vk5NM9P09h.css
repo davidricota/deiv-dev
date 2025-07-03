@@ -7246,3 +7246,28 @@ form textarea:required:valid {
     opacity: 0;
   }
 }
+
+.headline__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: clamp(2.5rem, 12vw, 36rem);
+  max-width: 75vw;
+  margin: 0 auto;
+  line-height: 1.05;
+  font-weight: 800;
+  word-break: break-word;
+  text-align: center;
+}
+
+.typing-braces {
+  font-size: 1.2em;
+  font-weight: 800;
+  opacity: 0.8;
+}
+
+.typing-text {
+  font-size: 1em;
+  font-weight: 800;
+}
