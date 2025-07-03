@@ -1,3 +1,11 @@
+import tx14poT20GdO from "@/assets/images/tx14poT20GdO.webp";
+import Lc3LTm25uqwZ from "@/assets/images/Lc3LTm25uqwZ.webp";
+import sVpwMmXLMwwW from "@/assets/images/sVpwMmXLMwwW.webp";
+import rBkB6zdUG2vu from "@/assets/images/rBkB6zdUG2vu.webp";
+import huKpgxHIz8aF from "@/assets/images/huKpgxHIz8aF.webp";
+import img7UN8pEkGGLJn from "@/assets/images/7UN8pEkGGLJn.webp";
+import fkV97TVC0hBz from "@/assets/images/fkV97TVC0hBz.webp";
+
 export default [
   {
     id: 1,
@@ -14,14 +22,14 @@ export default [
     solution:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum.",
     images: {
-      portrait: "/images/tx14poT20GdO.webp",
-      landscape: "/images/Lc3LTm25uqwZ.webp",
-      fullwidth: ["/images/sVpwMmXLMwwW.webp", "/images/rBkB6zdUG2vu.webp"],
-      grid: ["/images/huKpgxHIz8aF.webp", "/images/7UN8pEkGGLJn.webp"],
+      portrait: tx14poT20GdO,
+      landscape: Lc3LTm25uqwZ,
+      fullwidth: [sVpwMmXLMwwW, rBkB6zdUG2vu],
+      grid: [huKpgxHIz8aF, img7UN8pEkGGLJn],
     },
     feedback: {
       author: "Natalia Pineapple",
-      avatar: "/images/fkV97TVC0hBz.webp",
+      avatar: fkV97TVC0hBz,
       position: "SEO in Mix Design",
       rating: 5,
       text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud.",

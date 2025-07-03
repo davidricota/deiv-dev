@@ -1,0 +1,26 @@
+---
+export interface SocialLink {
+  href: string;
+  label: string;
+  icon: any; // Puede ser un componente Astro o un SVG importado
+}
+export interface Props {
+  links: SocialLink[];
+}
+const { links = [] } = Astro.props;
+---
+
+<ul class="social-links">
+  {
+    links.map((link) => (
+      <li>
+        <a href={link.href} target="_blank" rel="noopener" aria-label={link.label}>
+          {link.icon}
+          <span class="sr-only">{link.label}</span>
+        </a>
+      </li>
+    ))
+  }
+</ul>
+<slot />
+

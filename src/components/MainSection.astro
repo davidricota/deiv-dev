@@ -1,5 +1,9 @@
 ---
 // Componente MainSection para la sección principal (home)
+import { Image } from "astro:assets";
+import sPFOKHs4syT3 from "@/assets/images/sPFOKHs4syT3.webp";
+import bfYq5Lb9oJf7 from "@/assets/images/bfYq5Lb9oJf7.webp";
+import EfEx6x7YpgQv from "@/assets/images/EfEx6x7YpgQv.webp";
 ---
 
 <main id="page-content" class="page-content">
@@ -20,9 +24,9 @@
                 <span class="typing-braces" set:html="}" />
               </h1>
               <p class="headline__subtitle space-top animated-type loading__item d-flex gap-2">
-                <b> Fullstack Developer </b> |
+                <b> Not the typical developer. </b><br />
 
-                <b>WordPress & WooCommerce Expert</b>
+                <b>Building digital products with flow and style.</b>
               </p>
             </div>
           </div>
@@ -116,7 +120,7 @@
                 </svg>
               </div>
               <div class="item image image-1">
-                <img src="/images/sPFOKHs4syT3.webp" alt="Image" />
+                <Image src={sPFOKHs4syT3} alt="Image" />
               </div>
               <div class="item icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.2 82.8" fill="currentColor">
@@ -160,7 +164,7 @@
                 </svg>
               </div>
               <div class="item image image-2">
-                <img src="/images/bfYq5Lb9oJf7.webp" alt="Image" />
+                <Image src={bfYq5Lb9oJf7} alt="Image" />
               </div>
               <div class="item icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 84" fill="currentColor">
@@ -183,7 +187,7 @@
                 </svg>
               </div>
               <div class="item image image-3">
-                <img src="/images/EfEx6x7YpgQv.webp" alt="Image" />
+                <Image src={EfEx6x7YpgQv} alt="Image" />
               </div>
             </div>
           </div>
