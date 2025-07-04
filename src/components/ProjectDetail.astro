@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 export interface Props {
   project: {
     id: number;
@@ -34,12 +35,16 @@ const { project } = Astro.props;
 <div class="project">
   <!-- Project Block - Title with Image Start -->
   <div class="project__block no-padding no-margin project-image-bg">
-    <img
+    <Image
+      width={600}
+      height={800}
       class="project-image-bg__portrait"
       src={project.images.portrait}
       alt="Project Illustration"
     />
-    <img
+    <Image
+      width={1334}
+      height={556}
       class="project-image-bg__landscape"
       src={project.images.landscape}
       alt="Project Illustration"
@@ -95,7 +100,12 @@ const { project } = Astro.props;
   <!-- Project Block - Illustration Fullwidth Start -->
   <div class="project__block no-margin">
     <div class="project__illustration-xl">
-      <img src={project.images.fullwidth[0]} alt="Project Illustration" />
+      <Image
+        width={1234}
+        height={514}
+        src={project.images.fullwidth[0]}
+        alt="Project Illustration"
+      />
     </div>
   </div>
   <!-- Project Block - Illustration Fullwidth End -->
@@ -130,7 +140,7 @@ const { project } = Astro.props;
                 class={`col-12 col-md-6 ${project.images.grid.length > 2 ? "col-xl-3" : ""} grid-item`}
               >
                 <div class="project__illustration">
-                  <img src={image} alt="Work Illustration" />
+                  <Image width={512} height={512} src={image} alt="Work Illustration" />
                 </div>
               </div>
             ))
@@ -226,4 +236,3 @@ const { project } = Astro.props;
   </div>
   <!-- Project Block - Project Link End -->
 </div>
-
