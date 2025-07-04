@@ -2,7 +2,7 @@
 export interface SocialLink {
   href: string;
   label: string;
-  icon: any; // Puede ser un componente Astro o un SVG importado
+  icon: string; // Clase del ícono de Phosphor (ej: "ph ph-github-logo")
 }
 export interface Props {
   links: SocialLink[];
@@ -10,17 +10,21 @@ export interface Props {
 const { links = [] } = Astro.props;
 ---
 
-<ul class="social-links">
+<ul class="socials-cards flex justify-center flex-wrap gap-8">
   {
     links.map((link) => (
-      <li>
-        <a href={link.href} target="_blank" rel="noopener" aria-label={link.label}>
-          {link.icon}
-          <span class="sr-only">{link.label}</span>
+      <li class="flex-1 max-w-1/4 aspect-square rounded-4xl  flex ">
+        <a
+          class="socials-cards__link flex items-center justify-center aspect-square"
+          href={link.href}
+          target="_blank"
+          rel="noopener"
+          aria-label={link.label}
+        >
+          <em class="sr-only" />
+          <i class={`${link.icon} ph`} />
         </a>
       </li>
     ))
   }
 </ul>
-<slot />
-

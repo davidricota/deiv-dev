@@ -1,93 +1,25 @@
 ---
 // Componente Contact
+import SocialLinks from "./SocialLinks.astro";
+import socialData from "../data/social.js";
 ---
 
-<section id="contact" class="inner contact inner-grid-bottom no-padding-bottom">
-  <div class="inner__wrapper">
-    <div class="container-fluid p-0">
-      <div class="row g-0">
-        <div class="col-12 col-xl-2">
-          <div class="inner__name">
-            <div class="content__block name-block">
-              <span class="section-name icon-right animate-in-up">
-                <span class="section-name-caption">Contact</span>
-                <i class="ph ph-arrow-down-right"></i>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-xl-8">
-          <div class="inner__content">
-            <div class="content__block section-form-title">
-              <div class="block__descr">
-                <h2 class="reveal-type animate-in-up">Just say hello!</h2>
-                <p class="h2__text type-basic-160lh animate-in-up">
-                  Want to know more about me, tell me about your project or just to say hello? Drop
-                  me a line and I'll get back as soon as possible.
-                </p>
-              </div>
-            </div>
-
-            <div class="content__block grid-block">
-              <ul class="socials-cards d-flex justify-content-start flex-wrap">
-                <li class="socials-cards__item grid-item d-flex animate-card-5">
-                  <a
-                    class="socials-cards__link d-flex align-items-center justify-content-center"
-                    href="https://github.com/deiv-dev"
-                    target="_blank"><em></em><i class="ph ph-github-logo"></i></a
-                  >
-                </li>
-                <li class="socials-cards__item grid-item d-flex animate-card-5">
-                  <a
-                    class="socials-cards__link d-flex align-items-center justify-content-center"
-                    href="https://gitlab.com/deiv-dev"
-                    target="_blank"><em></em><i class="ph ph-gitlab-logo"></i></a
-                  >
-                </li>
-                <li class="socials-cards__item grid-item d-flex animate-card-5">
-                  <a
-                    class="socials-cards__link d-flex align-items-center justify-content-center"
-                    href="https://linkedin.com/in/deiv-dev"
-                    target="_blank"><em></em><i class="ph ph-linkedin-logo"></i></a
-                  >
-                </li>
-                <li class="socials-cards__item grid-item d-flex animate-card-5">
-                  <a
-                    class="socials-cards__link d-flex align-items-center justify-content-center"
-                    me
-                    deivedevmailto:me@deiv.dev"
-                    target="_blank"><em></em><i class="ph ph-envelope"></i></a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="footer">
-              <div class="container-fluid p-0">
-                <div class="row g-0">
-                  <div class="col-12">
-                    <div class="content__block pre-grid-items">
-                      <div
-                        class="footer__link d-flex flex-column flex-md-row justify-content-md-between align-items-md-center"
-                      >
-                        <div class="footer__text reveal-type animate-in-up">
-                          Got an idea?<br />Tell me!
-                        </div>
-                        <div class="footer__btn animate-in-up">
-                          <a
-                            href="mailto:me@deiv.dev?subject=Message%20from%20your%20site"
-                            class="btn btn-circle-icon hover-circle"
-                            ><em></em><i class="ph-light ph-arrow-right"></i></a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-xl-2"></div>
-        </div>
+<section id="contact" class="contact inner-grid-bottom pb-0">
+  <div class="container">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-12">
+      <div class="md:col-span-2">
+        <span class="section-name icon-right animate-in-up">
+          <span class="section-name-caption">Contact</span>
+          <i class="ph ph-arrow-down-right"></i>
+        </span>
+      </div>
+      <div class="md:col-span-8 flex flex-col gap-12 md:gap-24">
+        <h2 class="reveal-type animate-in-up">Just say hello!</h2>
+        <p class="animate-in-up">
+          Want to know more about me, tell me about your project or just to say hello? Drop me a
+          line and I'll get back as soon as possible.
+        </p>
+        <SocialLinks links={socialData} />
       </div>
     </div>
   </div>
