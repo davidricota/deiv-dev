@@ -2537,21 +2537,6 @@ form textarea:required:valid {
 /* ------------------------------------------------*/
 /* Sections Main Start */
 /* ------------------------------------------------*/
-.main {
-  position: relative;
-  padding-top: 6rem;
-  overflow: hidden;
-}
-@media only screen and (min-width: 768px) {
-  .main {
-    padding-top: 7rem;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .main {
-    padding-top: 0;
-  }
-}
 
 .main__intro {
   position: relative;
