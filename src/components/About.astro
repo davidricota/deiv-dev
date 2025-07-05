@@ -1,5 +1,6 @@
 ---
 // Componente About para la sección "About me"
+import { aboutData } from "@/data/about.js";
 ---
 
 <section id="about" class="about">
@@ -12,161 +13,33 @@
         </span>
       </div>
       <div class="md:col-span-8 flex flex-col gap-12 md:gap-24">
-        <h2 class="reveal-type animate-in-up">My <span>Developer's Path</span></h2>
+        <h2 class="reveal-type animate-in-up" set:html={"My Dev's Path"} />
         <div class="flex flex-col gap-8">
-          <!-- 01 - The Beginning -->
-          <div class="grid grid-cols-12 gap-4 items-start animate-in-up">
-            <div class="col-span-12 md:col-span-3 flex flex-col">
-              <h3 class="heading-3 mb-2">
-                01. <small class="block text-base font-normal opacity-75" style="font-size:50%"
-                  >The Beginning</small
-                >
-              </h3>
-            </div>
-            <div class="col-span-12 md:col-span-9">
-              <p>
-                I'm not the typical developer. A long time ago, my journey began — over 20 years ago
-                — as a young padawan discovering the early powers of <span class="font-bold"
-                  >visuals</span
-                >, <span class="italic">motion</span>, and <span class="font-bold italic"
-                  >detail</span
-                >. That's where the first skills took shape: <span class="font-bold"
-                  >pixel-perfect layouts</span
-                >, <span class="italic">smooth interactions</span>, and <span class="font-bold"
-                  >interfaces that felt alive</span
-                >.
-              </p>
-            </div>
-          </div>
-          <!-- 02 - The Evolution -->
-          <div class="grid grid-cols-12 gap-4 items-start animate-in-up">
-            <div class="col-span-12 md:col-span-3 flex flex-col">
-              <h3 class="heading-3 mb-2">
-                02. <small class="block text-base font-normal opacity-75" style="font-size:50%"
-                  >The Evolution</small
-                >
-              </h3>
-            </div>
-            <div class="col-span-12 md:col-span-9">
-              <p>
-                But style alone wasn't enough. The real power came when I embraced the other side of
-                the stack — <span class="font-bold">solving complex challenges</span>, <span
-                  class="italic">building integrations</span
-                >, and <span class="font-bold">connecting systems</span>. Some might call it <span
-                  class="italic">the dark side of development</span
-                >. I call it <span class="font-bold">balance</span>.
-              </p>
-            </div>
-          </div>
-          <!-- 03 - The Present -->
-          <div class="grid grid-cols-12 gap-4 items-start animate-in-up">
-            <div class="col-span-12 md:col-span-3 flex flex-col">
-              <h3 class="heading-3 mb-2">
-                03. <small class="block text-base font-normal opacity-75" style="font-size:50%"
-                  >The Present</small
-                >
-              </h3>
-            </div>
-            <div class="col-span-12 md:col-span-9">
-              <p>
-                Today, I'm walking the path of <span class="font-bold">product design</span> — adding
-                <span class="italic">strategy</span> and <span class="italic">UX thinking</span> to my
-                toolkit, aiming to understand not just <span class="font-bold">how to build</span>,
-                but <span class="font-bold">what to build</span> and <span class="font-bold"
-                  >why</span
-                >.
-              </p>
-            </div>
-          </div>
-          <!-- 04 - The Mission -->
-          <div class="grid grid-cols-12 gap-4 items-start animate-in-up">
-            <div class="col-span-12 md:col-span-3 flex flex-col">
-              <h3 class="heading-3 mb-2">
-                04. <small class="block text-base font-normal opacity-75" style="font-size:50%"
-                  >The Mission</small
-                >
-              </h3>
-            </div>
-            <div class="col-span-12 md:col-span-9">
-              <p>
-                I <span class="font-bold">create to solve</span>. For <span class="italic"
-                  >clients</span
-                >. For <span class="italic">users</span>. For the <span class="font-bold"
-                  >products I believe in</span
-                >. My focus is on <span class="font-bold"
-                  >helping digital products grow with clarity</span
-                > — and shaping the <span class="italic">tools I'd want to use myself</span>.
-              </p>
-            </div>
-          </div>
-          <!-- 05 - The Learning -->
-          <div class="grid grid-cols-12 gap-4 items-start animate-in-up">
-            <div class="col-span-12 md:col-span-3 flex flex-col">
-              <h3 class="heading-3 mb-2">
-                05. <small class="block text-base font-normal opacity-75" style="font-size:50%"
-                  >The Learning</small
-                >
-              </h3>
-            </div>
-            <div class="col-span-12 md:col-span-9">
-              <p>
-                A developer's journey is <span class="font-bold">never done</span>. New tools, new
-                mindsets, new challenges — I keep learning to stay <span class="italic">sharp</span
-                >, <span class="italic">adaptable</span>, and <span class="italic"
-                  >ready for what's next</span
-                >.
-              </p>
-            </div>
-          </div>
-          <!-- 06 - The Vision -->
-          <div class="grid grid-cols-12 gap-4 items-start animate-in-up">
-            <div class="col-span-12 md:col-span-3 flex flex-col">
-              <h3 class="heading-3 mb-2">
-                06. <small class="block text-base font-normal opacity-75" style="font-size:50%"
-                  >The Vision</small
-                >
-              </h3>
-            </div>
-            <div class="col-span-12 md:col-span-9">
-              <p>
-                Beyond code and design, I believe in <span class="font-bold"
-                  >building things that last</span
-                > — <span class="italic">products with purpose</span>, <span class="italic"
-                  >interfaces that matter</span
-                >, and <span class="font-bold">ideas that evolve into something real</span>.
-              </p>
-            </div>
-          </div>
-          <!-- 07 - The Future -->
-          <div class="grid grid-cols-12 gap-4 items-start animate-in-up">
-            <div class="col-span-12 md:col-span-3 flex flex-col">
-              <h3 class="heading-3 mb-2">
-                07. <small class="block text-base font-normal opacity-75" style="font-size:50%"
-                  >The Future</small
-                >
-              </h3>
-            </div>
-            <div class="col-span-12 md:col-span-9">
-              <p>
-                <span class="font-bold">Ideas become products.</span>
-                <span class="italic">Side-projects become platforms.</span> I'm <span
-                  class="font-bold">building tools to help others</span
-                > — and to power <span class="italic">my own vision</span>.
-              </p>
-              <p class="mt-4 font-bold italic">
-                Always curious. Always building. Always delivering.
-              </p>
-            </div>
-          </div>
+          {
+            aboutData.sections.map((section) => (
+              <div class="grid grid-cols-12 gap-4 items-start animate-in-up">
+                <div class="col-span-12 md:col-span-3 flex flex-col">
+                  <h3 class="heading-3 mb-2">
+                    {section.id}.{" "}
+                    <small class="block text-base font-normal opacity-75" style="font-size:50%">
+                      {section.subtitle}
+                    </small>
+                  </h3>
+                </div>
+                <div class="col-span-12 md:col-span-9">
+                  <p set:html={section.content} />
+                  {section.additional && (
+                    <p class="mt-4 font-bold italic" set:html={section.additional} />
+                  )}
+                </div>
+              </div>
+            ))
+          }
         </div>
         <div class="btn-group about-descr__btnholder animate-in-up">
-          <a
-            class="btn btn-default hover-default"
-            href="/pdf/_David_Verta_RESUME.pdf"
-            target="_blank"
-          >
+          <a class="btn btn-default hover-default" href={aboutData.cv.href} target="_blank">
             <em></em>
-            <span class="btn-caption">Download CV</span>
+            <span class="btn-caption">{aboutData.cv.text}</span>
           </a>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8">
@@ -175,24 +48,28 @@
           </div>
           <div class="md:col-span-4 flex flex-col gap-4">
             <div class="about-info__item animate-in-up">
-              <h6>David Verta</h6>
+              <h6>{aboutData.contact.name}</h6>
             </div>
             <div class="about-info__item animate-in-up">
               <h6>
-                <a class="link-inline text-link" href="tel:+5491112345678">+54 9 11 3574 5491</a>
+                <a class="link-inline text-link" href={aboutData.contact.phone.href}
+                  >{aboutData.contact.phone.number}</a
+                >
               </h6>
             </div>
             <div class="about-info__item animate-in-up">
               <h6>
-                <a class="link-inline text-link" href="mailto:me@deiv.dev">me@deiv.dev</a>
+                <a class="link-inline text-link" href={aboutData.contact.email.href}
+                  >{aboutData.contact.email.address}</a
+                >
               </h6>
             </div>
             <div class="about-info__item animate-in-up">
               <h6>
                 <a
                   class="link-inline text-link"
-                  href="https://maps.app.goo.gl/xMJXTEUeHkv6kYRQ6"
-                  target="_blank">Buenos Aires, Argentina</a
+                  href={aboutData.contact.location.href}
+                  target="_blank">{aboutData.contact.location.text}</a
                 >
               </h6>
             </div>

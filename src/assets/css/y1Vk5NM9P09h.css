@@ -4153,26 +4153,30 @@ form textarea:required:valid {
 
 .header__navigation {
   position: relative;
-  -moz-border-radius: var(--_radius-s);
-  border-radius: var(--_radius-s);
-  background-color: rgba(0, 0, 0, 0.03);
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
+}
+@media only screen and (min-width: 1200px) {
+  .header__navigation {
+    height: 4rem;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .header__navigation {
+    height: 5rem;
+  }
 }
 
 .logo {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+
   overflow: hidden;
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   -moz-border-radius: var(--_radius-s);
   border-radius: var(--_radius-s);
   z-index: 100;
-}
-@media only screen and (min-width: 768px) {
-  .logo {
-    top: 3rem;
-    left: 5rem;
-  }
 }
 
 .logo__link {
@@ -4207,6 +4211,10 @@ form textarea:required:valid {
 }
 
 .color {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
   -moz-box-align: center;
   -ms-flex-align: center;
@@ -4224,12 +4232,7 @@ form textarea:required:valid {
   overflow: hidden;
   z-index: 100;
 }
-@media only screen and (min-width: 768px) {
-  .color {
-    top: 3rem;
-    right: 5rem;
-  }
-}
+
 @media only screen and (min-width: 1400px) {
   .color {
     width: 5rem;

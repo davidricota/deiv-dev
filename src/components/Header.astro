@@ -9,52 +9,53 @@ import Logo from "@/components/Logo.astro";
   <div class="container flex justify-between items-center">
     <Logo />
 
-    <!-- Navigation Menu Start -->
-    <div class="header header__navigation flex justify-center">
-      <nav id="menu" class="menu">
-        <ul class="menu__list d-flex justify-content-start">
-          <li class="menu__item">
-            <a class="menu__link btn" href="#home">
-              <span class="menu__caption">Home</span>
-              <i class="ph ph-house-simple"></i>
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link btn" href="#services">
-              <span class="menu__caption">Services</span>
-              <i class="ph ph-sticker"></i>
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link btn" href="#portfolio">
-              <span class="menu__caption">Portfolio</span>
-              <i class="ph ph-squares-four"></i>
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link btn" href="#about">
-              <span class="menu__caption">About Me</span>
-              <i class="ph ph-user"></i>
-            </a>
-          </li>
+    <div class="header">
+      <!-- Navigation Menu Start -->
+      <div class="header__navigation flex justify-center">
+        <nav id="menu" class="menu">
+          <ul class="menu__list d-flex justify-content-start">
+            <li class="menu__item">
+              <a class="menu__link btn" href="#home">
+                <span class="menu__caption">Home</span>
+                <i class="ph ph-house-simple"></i>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link btn" href="#services">
+                <span class="menu__caption">Services</span>
+                <i class="ph ph-sticker"></i>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link btn" href="#portfolio">
+                <span class="menu__caption">Portfolio</span>
+                <i class="ph ph-squares-four"></i>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link btn" href="#about">
+                <span class="menu__caption">About Me</span>
+                <i class="ph ph-user"></i>
+              </a>
+            </li>
 
-          <li class="menu__item">
-            <a class="menu__link btn" href="#resume">
-              <span class="menu__caption">Resume</span>
-              <i class="ph ph-article"></i>
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link btn" href="#contact">
-              <span class="menu__caption">Contact</span>
-              <i class="ph ph-envelope"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
+            <li class="menu__item">
+              <a class="menu__link btn" href="#resume">
+                <span class="menu__caption">Resume</span>
+                <i class="ph ph-article"></i>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link btn" href="#contact">
+                <span class="menu__caption">Contact</span>
+                <i class="ph ph-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Navigation Menu End -->
     </div>
-
-    <!-- Navigation Menu End -->
     <ColorSwitch />
   </div>
 </header>
