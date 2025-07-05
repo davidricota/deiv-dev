@@ -107,10 +107,51 @@ function pageAppearance() {
 // --------------------------------------------- //
 // Bootstrap Scroll Spy Plugin Settings Start
 // --------------------------------------------- //
+// Configuración más robusta del ScrollSpy
+const menuLinks = document.querySelectorAll("#menu .menu__link");
+const sections = document.querySelectorAll("section[id]");
+
+// Función para actualizar el menú activo
+function updateActiveMenu() {
+  const scrollPosition = window.scrollY + 100; // Offset para mejor detección
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    const sectionId = section.getAttribute("id");
+
+    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+      // Remover clase active de todos los links
+      menuLinks.forEach((link) => {
+        link.classList.remove("active");
+      });
+
+      // Agregar clase active al link correspondiente
+      const activeLink = document.querySelector(`#menu .menu__link[href="#${sectionId}"]`);
+      if (activeLink) {
+        activeLink.classList.add("active");
+        console.log("Active section:", sectionId); // Debug log
+      }
+    }
+  });
+}
+
+// Escuchar el scroll
+window.addEventListener("scroll", updateActiveMenu);
+
+// También actualizar en el load inicial
+document.addEventListener("DOMContentLoaded", updateActiveMenu);
+
+// Asegurar que se ejecute después de que todo esté cargado
+window.addEventListener("load", () => {
+  setTimeout(updateActiveMenu, 1000); // Pequeño delay para asegurar que todo esté listo
+});
+
+// Configuración del ScrollSpy de Bootstrap como fallback
 const scrollSpy = new bootstrap.ScrollSpy(document.body, {
   target: "#menu",
   smoothScroll: true,
-  rootMargin: "0px 0px -40%",
+  rootMargin: "0px 0px -25%",
 });
 // --------------------------------------------- //
 // Bootstrap Scroll Spy Plugin Settings End

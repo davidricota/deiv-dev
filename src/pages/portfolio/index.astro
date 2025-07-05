@@ -1,6 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import portfolioData from "../../data/portfolio.js";
+import { portfolio } from "../../data/site.js";
 ---
 
 <Layout title="Portfolio | David Verta">
@@ -17,7 +17,7 @@ import portfolioData from "../../data/portfolio.js";
 
                 <div class="portfolio-grid">
                   {
-                    portfolioData.map((project) => (
+                    portfolio.map((project) => (
                       <div class="portfolio-item">
                         <a href={`/portfolio/${project.slug}`} class="portfolio-link">
                           <div class="portfolio-image">
@@ -128,4 +128,3 @@ import portfolioData from "../../data/portfolio.js";
     font-weight: 500;
   }
 </style>
-
