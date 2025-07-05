@@ -4,50 +4,37 @@ import { portfolio } from "@/data/site.js";
 ---
 
 <!-- Inner Section - Portfolio - Start -->
-<section id="portfolio" class="inner inner-stack-bottom no-padding-top portfolio">
-  <div class="inner__wrapper">
-    <div class="container-fluid p-0">
-      <div class="row g-0">
-        <!-- Inner Section Content Start -->
-        <div class="col-12">
-          <div class="inner__content">
-            <!-- Content Block - Portfolio Stacking Cards Start -->
-            <div class="content__block">
-              <div class="stack-wrapper">
-                <div class="stack-offset solid-block"></div>
-                <div class="portfolio-stack">
-                  {
-                    portfolio.map((project, index) => (
-                      <div class="stack-item">
-                        <a
-                          href={`/portfolio/${project.slug}`}
-                          class={`portfolio-stack__inner portfolio-item-${index + 1} popup-trigger`}
-                        >
-                          <div class="portfolio-stack__descr">
-                            <h3
-                              class={`portfolio-stack__title ${index % 2 === 0 ? "dark" : "light"}`}
-                            >
-                              {project.title}
-                            </h3>
-                            <p
-                              class={`portfolio-stack__text type-basic-160lh ${index % 2 === 0 ? "dark" : "light"}`}
-                            >
-                              {project.description.substring(0, 100)}...
-                            </p>
-                          </div>
-                        </a>
-                      </div>
-                    ))
-                  }
+<section id="portfolio" class="portfolio">
+  <div class="container p-0">
+    <!-- Content Block - Portfolio Stacking Cards Start -->
+
+    <div class="stack-wrapper">
+      <div class="stack-offset solid-block"></div>
+      <div class="portfolio-stack">
+        {
+          portfolio.map((project, index) => (
+            <div class="stack-item">
+              <a
+                href={`/portfolio/${project.slug}`}
+                class={`portfolio-stack__inner portfolio-item-${index + 1} popup-trigger`}
+              >
+                <div class="portfolio-stack__descr">
+                  <h3 class={`portfolio-stack__title ${index % 2 === 0 ? "dark" : "light"}`}>
+                    {project.title}
+                  </h3>
+                  <p
+                    class={`portfolio-stack__text type-basic-160lh ${index % 2 === 0 ? "dark" : "light"}`}
+                  >
+                    {project.description.substring(0, 100)}...
+                  </p>
                 </div>
-              </div>
+              </a>
             </div>
-            <!-- Content Block - Portfolio Stacking Cards End -->
-          </div>
-        </div>
-        <!-- Inner Section Content End -->
+          ))
+        }
       </div>
     </div>
+    <!-- Content Block - Portfolio Stacking Cards End -->
   </div>
 </section>
 <!-- Inner Section - Portfolio - End -->

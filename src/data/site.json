@@ -65,7 +65,7 @@
             "name": "David Verta",
             "phone": {
                 "number": "+54 9 11 3574 5491",
-                "href": "tel:+5491112345678"
+                "href": "https://wa.me/5491135745491"
             },
             "email": {
                 "address": "me@deiv.dev",
@@ -306,17 +306,12 @@
     ],
     "social": [
         {
-            "href": "https://github.com/deiv-dev",
-            "label": "GitHub",
-            "icon": "ph ph-github-logo"
+            "href": "https://wa.me/5491135745491",
+            "label": "Whatsapp",
+            "icon": "ph ph-whatsapp-logo"
         },
         {
-            "href": "https://gitlab.com/deiv-dev",
-            "label": "GitLab",
-            "icon": "ph ph-gitlab-logo"
-        },
-        {
-            "href": "https://linkedin.com/in/deiv-dev",
+            "href": "https://linkedin.com/in/davidverta",
             "label": "LinkedIn",
             "icon": "ph ph-linkedin-logo"
         },
@@ -324,6 +319,16 @@
             "href": "mailto:me@deiv.dev",
             "label": "Email",
             "icon": "ph ph-envelope"
+        },
+        {
+            "href": "https://github.com/davidricota",
+            "label": "GitHub",
+            "icon": "ph ph-github-logo"
+        },
+        {
+            "href": "https://gitlab.com/davidricota",
+            "label": "GitLab",
+            "icon": "ph ph-gitlab-logo"
         }
     ]
 }

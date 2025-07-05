@@ -7,38 +7,6 @@
    UTILITY CLASSES - MIGRATED FROM LEGACY CSS
    =========================================== */
 
-.heading-3 {
-    @apply font-extrabold;
-    font-family: var(--_font-accent);
-    color: var(--t-bright);
-    font-size: 3.4rem;
-}
-@media (min-width: 768px) {
-    .heading-3 {
-        font-size: 4.4rem;
-    }
-}
-@media (min-width: 1200px) {
-    .heading-3 {
-        font-size: 5rem;
-    }
-}
-@media (min-width: 1400px) {
-    .heading-3 {
-        font-size: 5.6rem;
-    }
-}
-@media (min-width: 1600px) {
-    .heading-3 {
-        font-size: 6.4rem;
-    }
-}
-
-/*
-  Heading utilities migradas de legacy CSS a Tailwind + custom properties.
-  Usar en headings principales de secciones, títulos de bloques, etc.
-*/
-
 /* h1: Título principal de página/sección hero */
 .heading-1 {
     @apply font-extrabold;
@@ -92,6 +60,33 @@
 @media (min-width: 1600px) {
     .heading-2 {
         font-size: 14rem;
+    }
+}
+
+.heading-3 {
+    @apply font-extrabold;
+    font-family: var(--_font-accent);
+    color: var(--t-bright);
+    font-size: 3.4rem;
+}
+@media (min-width: 768px) {
+    .heading-3 {
+        font-size: 4.4rem;
+    }
+}
+@media (min-width: 1200px) {
+    .heading-3 {
+        font-size: 5rem;
+    }
+}
+@media (min-width: 1400px) {
+    .heading-3 {
+        font-size: 5.6rem;
+    }
+}
+@media (min-width: 1600px) {
+    .heading-3 {
+        font-size: 6.4rem;
     }
 }
 
@@ -192,5 +187,8 @@
     color: var(--t-per-bright-light);
 }
 .header {
-    @apply backdrop-blur-sm  bg-black/30 rounded-2xl fixed left-8 bottom-8 z-10  md:bg-transparent md:static sm:bottom-12 sm:left-20 md:left-0 md:bottom-0;
+    @apply backdrop-blur-md  bg-black/30 rounded-2xl fixed left-8 bottom-8 z-10  md:bg-transparent md:static sm:bottom-12 sm:left-20 md:left-0 md:bottom-0;
+
+    border: 1px solid #ffffff1a;
+    box-shadow: 0 2px 75px #0003;
 }
