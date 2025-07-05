@@ -1,7 +1,7 @@
 ---
 // Componente Contact
 import SocialLinks from "./SocialLinks.astro";
-import socialData from "../data/social.js";
+import { social } from "@/data/site.js";
 ---
 
 <section id="contact" class="contact inner-grid-bottom pb-0">
@@ -19,7 +19,7 @@ import socialData from "../data/social.js";
           Want to know more about me, tell me about your project or just to say hello? Drop me a
           line and I'll get back as soon as possible.
         </p>
-        <SocialLinks links={socialData} />
+        <SocialLinks links={social} />
       </div>
     </div>
   </div>

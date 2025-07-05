@@ -1,0 +1,329 @@
+{
+    "about": {
+        "title": "My <span>Developer's Path</span>",
+        "sections": [
+            {
+                "id": "01",
+                "subtitle": "The Beginning",
+                "content": "I'm not the typical developer. A long time ago, my journey began — over 20 years ago — as a young padawan discovering the early powers of <span class=\"font-bold\">visuals</span>, <span class=\"italic\">motion</span>, and <span class=\"font-bold italic\">detail</span>. That's where the first skills took shape: <span class=\"font-bold\">pixel-perfect layouts</span>, <span class=\"italic\">smooth interactions</span>, and <span class=\"font-bold\">interfaces that felt alive</span>."
+            },
+            {
+                "id": "02",
+                "subtitle": "The Evolution",
+                "content": "But style alone wasn't enough. The real power came when I embraced the other side of the stack — <span class=\"font-bold\">solving complex challenges</span>, <span class=\"italic\">building integrations</span>, and <span class=\"font-bold\">connecting systems</span>. Some might call it <span class=\"italic\">the dark side of development</span>. I call it <span class=\"font-bold\">balance</span>."
+            },
+            {
+                "id": "03",
+                "subtitle": "The Present",
+                "content": "Today, I'm walking the path of <span class=\"font-bold\">product design</span> — adding <span class=\"italic\">strategy</span> and <span class=\"italic\">UX thinking</span> to my toolkit, aiming to understand not just <span class=\"font-bold\">how to build</span>, but <span class=\"font-bold\">what to build</span> and <span class=\"font-bold\">why</span>."
+            },
+            {
+                "id": "04",
+                "subtitle": "The Mission",
+                "content": "I <span class=\"font-bold\">create to solve</span>. For <span class=\"italic\">clients</span>. For <span class=\"italic\">users</span>. For the <span class=\"font-bold\">products I believe in</span>. My focus is on <span class=\"font-bold\">helping digital products grow with clarity</span> — and shaping the <span class=\"italic\">tools I'd want to use myself</span>."
+            },
+            {
+                "id": "05",
+                "subtitle": "The Learning",
+                "content": "A developer's journey is <span class=\"font-bold\">never done</span>. New tools, new mindsets, new challenges — I keep learning to stay <span class=\"italic\">sharp</span>, <span class=\"italic\">adaptable</span>, and <span class=\"italic\">ready for what's next</span>."
+            },
+            {
+                "id": "06",
+                "subtitle": "The Vision",
+                "content": "Beyond code and design, I believe in <span class=\"font-bold\">building things that last</span> — <span class=\"italic\">products with purpose</span>, <span class=\"italic\">interfaces that matter</span>, and <span class=\"font-bold\">ideas that evolve into something real</span>."
+            },
+            {
+                "id": "07",
+                "subtitle": "The Future",
+                "content": "<span class=\"font-bold\">Ideas become products.</span> <span class=\"italic\">Side-projects become platforms.</span> I'm <span class=\"font-bold\">building tools to help others</span> — and to power <span class=\"italic\">my own vision</span>.",
+                "additional": "Always curious. Always building. Always delivering."
+            }
+        ],
+        "achievements": [
+            {
+                "icon": "ph ph-trophy",
+                "title": "20+ Years",
+                "description": "Experience in web development and design"
+            },
+            {
+                "icon": "ph ph-users",
+                "title": "100+ Projects",
+                "description": "Successfully delivered to satisfied clients"
+            },
+            {
+                "icon": "ph ph-rocket",
+                "title": "10+ Products",
+                "description": "Built and launched from concept to market"
+            },
+            {
+                "icon": "ph ph-star",
+                "title": "5+ Awards",
+                "description": "Recognition for design and development excellence"
+            }
+        ],
+        "contact": {
+            "name": "David Verta",
+            "phone": {
+                "number": "+54 9 11 3574 5491",
+                "href": "tel:+5491112345678"
+            },
+            "email": {
+                "address": "me@deiv.dev",
+                "href": "mailto:me@deiv.dev"
+            },
+            "location": {
+                "text": "Buenos Aires, Argentina",
+                "href": "https://maps.app.goo.gl/xMJXTEUeHkv6kYRQ6"
+            }
+        },
+        "cv": {
+            "text": "DOWNLOAD RESUME",
+            "href": "/pdf/_David_Verta_RESUME.pdf"
+        }
+    },
+    "services": [
+        {
+            "id": 1,
+            "title": "Fullstack\nDevelopment",
+            "description": "Build from front to back — fast, functional, and scalable. From interfaces to APIs, everything tailored for performance and clarity.",
+            "stack": "Astro, React, Node.js, REST, Vercel, Supabase",
+            "image": "ME1vbM1gADIv.webp",
+            "alt": "Fullstack Development - System Architecture"
+        },
+        {
+            "id": 2,
+            "title": "WordPress &\nWooCommerce Expert",
+            "description": "Custom blocks, dynamic content, optimized shops — with no bloat. Advanced builds using native tools, ACF, CPTs and Woo.",
+            "stack": "PHP, ACF, Gutenberg, WooCommerce, WPML, Custom Themes",
+            "image": "qlq4K7e8e6MK.webp",
+            "alt": "WordPress & WooCommerce Development"
+        },
+        {
+            "id": 3,
+            "title": "Product Design\nThinking",
+            "description": "Design that works — intuitive, aesthetic, and responsive. Focusing on user flows, interaction, and clarity across devices.",
+            "stack": "Figma, Tailwind, Framer Motion, accessibility principles",
+            "image": "fb5kXWj157qL.webp",
+            "alt": "Product Design & UX"
+        },
+        {
+            "id": 4,
+            "title": "SaaS & Product\nStrategy",
+            "description": "From idea to MVP — turning concepts into working products. Helping others (and myself) launch digital tools with purpose.",
+            "stack": "Astro, Stripe, Supabase, Auth, Mixpanel, GA4",
+            "image": "PiURthOLcyQ6.webp",
+            "alt": "SaaS & Product Strategy"
+        }
+    ],
+    "resume": {
+        "title": "Full-stack Developer",
+        "education": [
+            {
+                "date": "2010 - 2017",
+                "title": "Technical Degree in Design, Image, and Sound",
+                "source": "Escuela de Artes Visuales Antonio Berni",
+                "link": "#0"
+            },
+            {
+                "date": "2005 - 2008",
+                "title": "Multimedia Design",
+                "source": "Escuela Da Vinci",
+                "link": "#0"
+            }
+        ],
+        "experience": [
+            {
+                "date": "2022 - 2025",
+                "title": "Full-stack Developer",
+                "source": "Ameba Creative Studio",
+                "link": "#0",
+                "description": "Delivered full-stack solutions across 20+ WordPress and WooCommerce projects. Developed e-commerce stores with custom plugins and ERP/API integrations. Built responsive landing pages using Astro.js and Next.js."
+            },
+            {
+                "date": "2019 - 2022",
+                "title": "Software Engineer / Web Community Lead",
+                "source": "Cognizant Softvision",
+                "link": "#0",
+                "description": "Maintained corporate sites using WordPress. Improved layout, performance, and content structure. Implemented A/B testing integration, analytics, and visual enhancements."
+            },
+            {
+                "date": "2018 - 2019",
+                "title": "Frontend Developer",
+                "source": "8a Marketing",
+                "link": "#0",
+                "description": "Created animated banners and campaign landing pages for Google using GSAP and HTML5. Developed custom WordPress landing pages for marketing initiatives."
+            }
+        ],
+        "skills": [
+            {
+                "category": "Frontend",
+                "title": "React, Next.js, Astro.js, WordPress",
+                "description": "Component-based design, TailwindCSS, accessibility, responsive UX, GSAP animations"
+            },
+            {
+                "category": "E-commerce",
+                "title": "WooCommerce Expert",
+                "description": "Custom themes, plugins, ERP/API integrations, payment gateways, stock sync, role-based pricing"
+            },
+            {
+                "category": "Performance",
+                "title": "Web Optimization",
+                "description": "Lighthouse, Core Web Vitals, GTmetrix, lazy loading, caching, CI/CD with Gitflow"
+            }
+        ]
+    },
+    "portfolio": [
+        {
+            "id": 1,
+            "slug": "blayden-portfolio-template",
+            "title": "Blayden portfolio template",
+            "type": "HTML template",
+            "date": "30.05.2024",
+            "role": "UI/UX designer",
+            "client": "Mix Design",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus!",
+            "challenge": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente.",
+            "solution": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum.",
+            "images": {
+                "portrait": "tx14poT20GdO.webp",
+                "landscape": "Lc3LTm25uqwZ.webp",
+                "fullwidth": [
+                    "sVpwMmXLMwwW.webp",
+                    "rBkB6zdUG2vu.webp"
+                ],
+                "grid": [
+                    "huKpgxHIz8aF.webp",
+                    "7UN8pEkGGLJn.webp"
+                ]
+            },
+            "feedback": {
+                "author": "Natalia Pineapple",
+                "avatar": "fkV97TVC0hBz.webp",
+                "position": "SEO in Mix Design",
+                "rating": 5,
+                "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud."
+            },
+            "projectUrl": "#0"
+        },
+        {
+            "id": 2,
+            "slug": "anime-style-fantasy-scenes",
+            "title": "Anime style fantasy scenes",
+            "type": "Illustrations",
+            "date": "23.05.2024",
+            "role": "Illustrator",
+            "client": "Editorial",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus!",
+            "challenge": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente.",
+            "solution": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum.",
+            "images": {
+                "portrait": "haAG1CSuokNC.webp",
+                "landscape": "nRUdnIUUEcDC.webp",
+                "fullwidth": [
+                    "QuKecNjJFjik.webp",
+                    "tQyrOtVs3Mn2.webp"
+                ],
+                "grid": [
+                    "NIDgxgDbz0nd.webp",
+                    "Osdnk7uVxZjy.webp"
+                ]
+            },
+            "feedback": {
+                "author": "Ashley Cherry",
+                "avatar": "Lp5lj6gS26qU.webp",
+                "position": "UX designer in Mix Design",
+                "rating": 5,
+                "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud."
+            },
+            "projectUrl": "#0"
+        },
+        {
+            "id": 3,
+            "slug": "x101-flexible-speaker",
+            "title": "X101 flexible speaker",
+            "type": "3D model",
+            "date": "27.05.2024",
+            "role": "Product designer",
+            "client": "Editorial",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus!",
+            "challenge": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente.",
+            "solution": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum.",
+            "images": {
+                "portrait": "lCMiZXHZnDTu.webp",
+                "landscape": "W3ZACC8qYFkS.webp",
+                "fullwidth": [
+                    "i94bQtr2G7xw.webp",
+                    "Zt89NMcM0DBM.webp"
+                ],
+                "grid": [
+                    "kAvEFbFMkw6x.webp",
+                    "iDu5bP54f7zh.webp",
+                    "NZo8SiZzXxEZ.webp",
+                    "sB88jGWipCCq.webp"
+                ]
+            },
+            "feedback": {
+                "author": "Alex Tomato",
+                "avatar": "oCArFB4XWIKr.webp",
+                "position": "Brand Manager in Mix Design",
+                "rating": 5,
+                "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud."
+            },
+            "projectUrl": "#0"
+        },
+        {
+            "id": 4,
+            "slug": "reflection-ai-project",
+            "title": "Reflection AI project",
+            "type": "AI images",
+            "date": "30.05.2024",
+            "role": "Prompt creator",
+            "client": "Editorial",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus!",
+            "challenge": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente.",
+            "solution": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum.",
+            "images": {
+                "portrait": "G6F8Plx0ph4E.webp",
+                "landscape": "ISHoDC32u5Aj.webp",
+                "fullwidth": [
+                    "lN8gII45sYbY.webp",
+                    "UdtIopVrUSOH.webp"
+                ],
+                "grid": [
+                    "uAps1RXO43zs.webp",
+                    "TFvGMpVxfHfG.webp"
+                ]
+            },
+            "feedback": {
+                "author": "Jenna Lemon",
+                "avatar": "euQ6b0lIZXNh.webp",
+                "position": "SEO in Mix Design",
+                "rating": 5,
+                "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud."
+            },
+            "projectUrl": "#0"
+        }
+    ],
+    "social": [
+        {
+            "href": "https://github.com/deiv-dev",
+            "label": "GitHub",
+            "icon": "ph ph-github-logo"
+        },
+        {
+            "href": "https://gitlab.com/deiv-dev",
+            "label": "GitLab",
+            "icon": "ph ph-gitlab-logo"
+        },
+        {
+            "href": "https://linkedin.com/in/deiv-dev",
+            "label": "LinkedIn",
+            "icon": "ph ph-linkedin-logo"
+        },
+        {
+            "href": "mailto:me@deiv.dev",
+            "label": "Email",
+            "icon": "ph ph-envelope"
+        }
+    ]
+}

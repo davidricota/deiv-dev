@@ -1,5 +1,5 @@
 ---
-import resumeData from "../data/resume.js";
+import { resume } from "@/data/site.js";
 // Componente Resume
 ---
 
@@ -23,7 +23,7 @@ import resumeData from "../data/resume.js";
           <div class="w-full p-0 resume-lines">
             <div class="resume-divider animate-in-up"></div>
             {
-              resumeData.experience.map((item) => (
+              resume.experience.map((item) => (
                 <div class="grid grid-cols-12 gap-8 resume-lines__item">
                   <div class="col-span-12 md:col-span-3 ">
                     <p class="resume-lines__date type-basic-160lh animate-in-up">{item.date}</p>
@@ -51,7 +51,7 @@ import resumeData from "../data/resume.js";
           <div class="w-full p-0 resume-lines">
             <div class="resume-divider animate-in-up"></div>
             {
-              resumeData.skills.map((item) => (
+              resume.skills.map((item) => (
                 <div class="grid grid-cols-12 gap-4 resume-lines__item">
                   <div class="col-span-12 md:col-span-3">
                     <p class="resume-lines__date type-basic-160lh animate-in-up">{item.category}</p>
@@ -71,7 +71,7 @@ import resumeData from "../data/resume.js";
           <div class="w-full p-0 resume-lines">
             <div class="resume-divider animate-in-up"></div>
             {
-              resumeData.education.map((item) => (
+              resume.education.map((item) => (
                 <div class="grid grid-cols-12 gap-8 resume-lines__item">
                   <div class="col-span-12 md:col-span-3 ">
                     <p class="resume-lines__date type-basic-160lh animate-in-up">{item.date}</p>

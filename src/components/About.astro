@@ -1,6 +1,7 @@
 ---
 // Componente About para la sección "About me"
-import { aboutData } from "@/data/about.js";
+import { about } from "@/data/site.js";
+import AchievementSection from "./AchievementSection.astro";
 ---
 
 <section id="about" class="about">
@@ -16,7 +17,7 @@ import { aboutData } from "@/data/about.js";
         <h2 class="reveal-type animate-in-up" set:html={"My Dev's Path"} />
         <div class="flex flex-col gap-8">
           {
-            aboutData.sections.map((section) => (
+            about.sections.map((section) => (
               <div class="grid grid-cols-12 gap-4 items-start animate-in-up">
                 <div class="col-span-12 md:col-span-3 flex flex-col">
                   <h3 class="heading-3 mb-2">
@@ -36,64 +37,17 @@ import { aboutData } from "@/data/about.js";
             ))
           }
         </div>
-        <div class="btn-group about-descr__btnholder animate-in-up">
-          <a class="btn btn-default hover-default" href={aboutData.cv.href} target="_blank">
+
+        <div class="flex justify-center animate-in-up">
+          <a
+            class="group border solid border-white rounded-full px-12 py-8 flex justify-center gap-2 items-center hover:text-black hover:bg-white transition"
+            href={about.cv.href}
+            target="_blank"
+          >
             <em></em>
-            <span class="btn-caption">{aboutData.cv.text}</span>
+            <span class="text-2xl">{about.cv.text}</span>
+            <i class="ph ph-arrow-down-right"></i>
           </a>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8">
-          <div class="md:col-span-8">
-            <div class="divider divider-image about-image-1 animate-in-up"></div>
-          </div>
-          <div class="md:col-span-4 flex flex-col gap-4">
-            <div class="about-info__item animate-in-up">
-              <h6>{aboutData.contact.name}</h6>
-            </div>
-            <div class="about-info__item animate-in-up">
-              <h6>
-                <a class="link-inline text-link" href={aboutData.contact.phone.href}
-                  >{aboutData.contact.phone.number}</a
-                >
-              </h6>
-            </div>
-            <div class="about-info__item animate-in-up">
-              <h6>
-                <a class="link-inline text-link" href={aboutData.contact.email.href}
-                  >{aboutData.contact.email.address}</a
-                >
-              </h6>
-            </div>
-            <div class="about-info__item animate-in-up">
-              <h6>
-                <a
-                  class="link-inline text-link"
-                  href={aboutData.contact.location.href}
-                  target="_blank">{aboutData.contact.location.text}</a
-                >
-              </h6>
-            </div>
-          </div>
-        </div>
-        <div class="achievements d-flex flex-col md:flex-row gap-4 md:gap-8">
-          <div class="achievements__item d-flex flex-col grid-item animate-card-3">
-            <div class="achievements__card">
-              <p class="achievements__number animate-in-up">40+</p>
-              <p class="achievements__descr animate-in-up">Happy clients</p>
-            </div>
-          </div>
-          <div class="achievements__item d-flex flex-col grid-item animate-card-3">
-            <div class="achievements__card">
-              <p class="achievements__number animate-in-up">2+</p>
-              <p class="achievements__descr animate-in-up">Years of experience</p>
-            </div>
-          </div>
-          <div class="achievements__item d-flex flex-col grid-item animate-card-3">
-            <div class="achievements__card">
-              <p class="achievements__number animate-in-up">50+</p>
-              <p class="achievements__descr animate-in-up">Projects done</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>

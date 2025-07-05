@@ -870,11 +870,6 @@ p.light {
   }
 }
 
-a {
-  font: normal var(--font-weight-base) 1.8rem var(--_font-default);
-  color: var(--t-bright);
-  text-decoration: none;
-}
 a.link-small {
   font-size: 1.6rem;
 }

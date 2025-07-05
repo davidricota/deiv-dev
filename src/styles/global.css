@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-    --color-overlay: rgba(0, 0, 0, 0.3);
 }
 
 /* ===========================================
@@ -193,5 +192,5 @@
     color: var(--t-per-bright-light);
 }
 .header {
-    @apply backdrop-blur-sm bg-overlay rounded-2xl fixed left-8 bottom-8 z-10  md:bg-transparent md:static sm:bottom-12 sm:left-20 md:left-0 md:bottom-0;
+    @apply backdrop-blur-sm  bg-black/30 rounded-2xl fixed left-8 bottom-8 z-10  md:bg-transparent md:static sm:bottom-12 sm:left-20 md:left-0 md:bottom-0;
 }

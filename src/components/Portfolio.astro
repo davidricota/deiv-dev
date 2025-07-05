@@ -1,5 +1,5 @@
 ---
-import portfolioData from "../data/portfolio.js";
+import { portfolio } from "@/data/site.js";
 // Componente Portfolio para la sección de portfolio
 ---
 
@@ -17,7 +17,7 @@ import portfolioData from "../data/portfolio.js";
                 <div class="stack-offset solid-block"></div>
                 <div class="portfolio-stack">
                   {
-                    portfolioData.map((project, index) => (
+                    portfolio.map((project, index) => (
                       <div class="stack-item">
                         <a
                           href={`/portfolio/${project.slug}`}
