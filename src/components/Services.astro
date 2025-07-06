@@ -28,9 +28,12 @@ import { services } from "@/data/site.js";
             services.map((service, index) => (
               <div class="cards__item animate-card-2">
                 <div class="cards__card flex flex-col ">
-                  <div class="p-12 grow">
-                    <h4 class="cards__title animate-in-up" set:html={service.title} />
-                    <p class="cards__text animate-in-up">{service.description}</p>
+                  <div class="p-8 grow flex flex-col gap-8">
+                    <h4
+                      class="cards__title services-title animate-in-up"
+                      set:html={service.title}
+                    />
+                    <p class="animate-in-up">{service.description}</p>
                   </div>
                   <div class="rounded-t-4xl overflow-hidden flex animate-in-up">
                     <div class="w-full min-h-[18.75rem] max-h-72">

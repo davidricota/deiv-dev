@@ -5905,6 +5905,9 @@ html[color-scheme="light"] .btn-line {
 .stack-wrapper {
   position: relative;
   width: 100%;
+  height: auto;
+  min-height: unset;
+  padding: 0;
 }
 
 .stack-offset {
@@ -5913,89 +5916,63 @@ html[color-scheme="light"] .btn-line {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 8rem;
+  height: 15rem;
   background-color: var(--base);
 }
 .stack-offset.solid-block {
-  height: 8rem;
+  height: 15rem;
 }
 @media only screen and (min-width: 768px) {
   .stack-offset {
-    height: 10rem;
+    height: 15rem;
   }
   .stack-offset.solid-block {
-    height: 10rem;
+    height: 15rem;
   }
 }
 @media only screen and (min-width: 992px) {
   .stack-offset {
-    height: 10rem;
+    height: 15rem;
   }
   .stack-offset.solid-block {
-    height: 10rem;
+    height: 15rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .stack-offset.solid-block {
-    height: 10rem;
+    height: 15rem;
   }
 }
 @media only screen and (min-width: 1400px) {
   .stack-offset {
-    height: 11rem;
+    height: 15rem;
   }
   .stack-offset.solid-block {
-    height: 11rem;
+    height: 15rem;
   }
 }
 @media only screen and (min-width: 1600px) {
   .stack-offset.solid-block {
-    height: 11rem;
+    height: 15rem;
   }
 }
 
 .services-stack {
   width: 100%;
   position: relative;
-  height: 65vh;
-  min-height: 615px;
+  height: calc(100vh - 10rem);
+  min-height: 400px;
 }
 @media only screen and (min-width: 768px) {
   .services-stack {
-    height: 500px;
-    min-height: 0;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .services-stack {
-    height: 600px;
-  }
-}
-@media only screen and (min-width: 1600px) {
-  .services-stack {
-    height: 700px;
+    min-height: 350px;
   }
 }
 
 .portfolio-stack {
   width: 100%;
   position: relative;
-  height: 460px;
-}
-@media only screen and (min-width: 768px) {
-  .portfolio-stack {
-    height: 530px;
-  }
-}
-@media only screen and (min-width: 1400px) {
-  .portfolio-stack {
-    height: 630px;
-  }
-}
-@media only screen and (min-width: 1600px) {
-  .portfolio-stack {
-    height: 750px;
-  }
+  height: calc(100vh - 20rem);
 }
 
 .stack-item {
@@ -6006,16 +5983,16 @@ html[color-scheme="light"] .btn-line {
   position: absolute;
   width: 100%;
   height: 100%;
-  padding-bottom: 2rem;
+  padding-right: 2rem;
 }
 @media only screen and (min-width: 768px) {
   .stack-item {
-    padding-bottom: 3rem;
+    padding-right: 3rem;
   }
 }
 @media only screen and (min-width: 1600px) {
   .stack-item {
-    padding-bottom: 5rem;
+    padding-right: 5rem;
   }
 }
 
@@ -7239,4 +7216,10 @@ html[color-scheme="dark"] .btn-line {
 html[color-scheme="dark"] .btn-line:hover {
   background-color: var(--t-bright);
   color: var(--t-opp-bright);
+}
+
+@media only screen and (min-width: 1600px) {
+  .stack-offset.solid-block {
+    height: 15rem;
+  }
 }

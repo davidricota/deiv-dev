@@ -211,17 +211,17 @@ if (toTop) {
 const cards = document.querySelectorAll(".stack-item");
 const stickySpace = document.querySelector(".stack-offset");
 const animation = gsap.timeline();
-let cardHeight;
+let cardWidth;
 
 if (cards.length && stickySpace) {
   function initCards() {
     animation.clear();
-    cardHeight = cards[0].offsetHeight;
-    //console.log("initCards()", cardHeight);
+    cardWidth = cards[0].offsetWidth;
+    //console.log("initCards()", cardWidth);
     cards.forEach((card, index) => {
       if (index > 0) {
-        gsap.set(card, { y: index * cardHeight });
-        animation.to(card, { y: 0, duration: index * 0.5, ease: "none" }, 0);
+        gsap.set(card, { x: index * cardWidth });
+        animation.to(card, { x: 0, duration: index * 0.5, ease: "none" }, 0);
       }
     });
   }
@@ -231,7 +231,7 @@ if (cards.length && stickySpace) {
     trigger: ".stack-wrapper",
     start: "top top",
     pin: true,
-    end: () => `+=${cards.length * cardHeight + stickySpace.offsetHeight}`,
+    end: () => `+=${cards.length * cardWidth + stickySpace.offsetWidth}`,
     scrub: true,
     animation: animation,
     //markers: true,
@@ -239,6 +239,7 @@ if (cards.length && stickySpace) {
   });
 
   ScrollTrigger.addEventListener("refreshInit", initCards);
+  ScrollTrigger.refresh();
 }
 // --------------------------------------------- //
 // Stacking Cards End
@@ -400,9 +401,9 @@ sectionTitles.forEach((title) => {
 
   // Set initial fontWeight and opacity
   text.chars.forEach((char) => {
-    char.style.fontWeight = 100;
+    char.style.fontWeight = 200;
     char.style.opacity = 0.2;
-    char.style.fontVariationSettings = "'wght' 100";
+    char.style.fontVariationSettings = "'wght' 200";
   });
 
   gsap.to(text.chars, {
@@ -856,16 +857,16 @@ if (typingTitle) {
 // --------------------------------------------- //
 // Cards Title Font Weight Animation Start
 // --------------------------------------------- //
-const cardTitles = document.querySelectorAll(".cards__title");
+const cardTitles = document.querySelectorAll(".cards__title:not(.services-title)");
 
 cardTitles.forEach((title) => {
   const text = new SplitType(title, { types: "words, chars" });
 
   // Set initial fontWeight and opacity
   text.chars.forEach((char) => {
-    char.style.fontWeight = 100;
+    char.style.fontWeight = 200;
     char.style.opacity = 0.2;
-    char.style.fontVariationSettings = "'wght' 100";
+    char.style.fontVariationSettings = "'wght' 200";
   });
 
   gsap.to(text.chars, {
@@ -888,4 +889,37 @@ cardTitles.forEach((title) => {
 });
 // --------------------------------------------- //
 // Cards Title Font Weight Animation End
+// --------------------------------------------- //
+
+// --------------------------------------------- //
+// Services Title Shadow Animation Start
+// --------------------------------------------- //
+const servicesTitles = document.querySelectorAll(".services-title");
+
+servicesTitles.forEach((title) => {
+  const text = new SplitType(title, { types: "words, chars" });
+
+  // Set initial state with font-weight 800 and no shadow
+  text.chars.forEach((char) => {
+    char.style.fontWeight = 800;
+    char.style.fontVariationSettings = "'wght' 800";
+    char.style.textShadow = "none";
+    char.style.opacity = 0.3;
+  });
+
+  gsap.to(text.chars, {
+    scrollTrigger: {
+      trigger: title,
+      start: "top 80%",
+      end: "top 20%",
+      scrub: true,
+      markers: false,
+    },
+    opacity: 1,
+    textShadow: "0 0 20px rgba(255, 255, 255, 0.8)",
+    stagger: 0.1,
+  });
+});
+// --------------------------------------------- //
+// Services Title Shadow Animation End
 // --------------------------------------------- //

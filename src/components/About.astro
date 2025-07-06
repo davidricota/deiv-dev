@@ -29,9 +29,6 @@ import AchievementSection from "./AchievementSection.astro";
                 </div>
                 <div class="col-span-12 md:col-span-9">
                   <p set:html={section.content} />
-                  {section.additional && (
-                    <p class="mt-4 font-bold italic" set:html={section.additional} />
-                  )}
                 </div>
               </div>
             ))
