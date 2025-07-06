@@ -15,7 +15,7 @@ import AchievementSection from "./AchievementSection.astro";
       </div>
       <div class="md:col-span-8 flex flex-col gap-12 md:gap-36">
         <h2 class="reveal-type animate-in-up" set:html={"My Dev's Path"} />
-        <div class="flex flex-col gap-36">
+        <div class="flex flex-col gap-24">
           {
             about.sections.map((section) => (
               <div class="grid grid-cols-12 gap-4 items-start animate-in-up">
@@ -40,7 +40,7 @@ import AchievementSection from "./AchievementSection.astro";
 
         <div class="flex justify-center animate-in-up">
           <a
-            class="group border solid border-white rounded-full px-12 py-8 flex justify-center gap-2 items-center hover:text-black hover:bg-white transition"
+            class="btn-line group border solid rounded-full px-12 py-8 flex justify-center gap-2 items-center transition"
             href={about.cv.href}
             target="_blank"
           >

@@ -1,6 +1,9 @@
 ---
 // Componente MainSection para la sección principal (home)
 import { Image } from "astro:assets";
+import { content } from "@/data/site.js";
+
+// Importar imágenes
 import sPFOKHs4syT3 from "@/assets/images/sPFOKHs4syT3.webp";
 import bfYq5Lb9oJf7 from "@/assets/images/bfYq5Lb9oJf7.webp";
 import EfEx6x7YpgQv from "@/assets/images/EfEx6x7YpgQv.webp";
@@ -18,9 +21,8 @@ import EfEx6x7YpgQv from "@/assets/images/EfEx6x7YpgQv.webp";
       <span class="typing-braces" set:html="}" />
     </h1>
     <p class="text-center animated-type loading__item flex flex-col md:flex-row gap-2">
-      <b> Not the typical developer. </b>
-
-      <b>Code is strong with this one.</b>
+      <b>{content.mainSection.tagline[0]}</b>
+      <b>{content.mainSection.tagline[1]}</b>
     </p>
   </div>
 
@@ -189,8 +191,7 @@ import EfEx6x7YpgQv from "@/assets/images/EfEx6x7YpgQv.webp";
               <div class="row g-0">
                 <div class="col-12">
                   <blockquote class="reveal-type animate-in-up">
-                    Here we must run as fast as we can, just to stay in place. And if you wish to go
-                    anywhere you must run twice as fast as that.
+                    {content.mainSection.blockquote}
                   </blockquote>
                 </div>
               </div>

@@ -13,14 +13,14 @@ export interface Props {
     challenge: string;
     solution: string;
     images: {
-      portrait: string;
-      landscape: string;
-      fullwidth: string[];
-      grid: string[];
+      portrait: any;
+      landscape: any;
+      fullwidth: any[];
+      grid: any[];
     };
     feedback: {
       author: string;
-      avatar: string;
+      avatar: any;
       position: string;
       rating: number;
       text: string;
@@ -173,52 +173,18 @@ const { project } = Astro.props;
   <!-- Project Block - Illustration Fullwidth Start -->
   <div class="project__block no-margin">
     <div class="project__illustration-xl">
-      <img src={project.images.fullwidth[1]} alt="Project Illustration" />
+      <Image
+        width={1234}
+        height={514}
+        src={project.images.fullwidth[1]}
+        alt="Project Illustration"
+      />
     </div>
   </div>
   <!-- Project Block - Illustration Fullwidth End -->
 
   <!-- Project Block - Client's Feedback Start -->
-  <div class="project__block normal-size no-margin-bottom">
-    <div class="project__descr">
-      <div class="container-fluid p-0">
-        <div class="row g-0">
-          <div class="col-12 col-xl-4">
-            <p class="project__subtitle image-top-subtitle tagline-chapter">Client's feedback</p>
-          </div>
-          <div class="col-12 col-xl-8">
-            <div class="project__feedback">
-              <div class="feedback__fauthor d-flex">
-                <div class="fauthor__avatar">
-                  <img src={project.feedback.avatar} alt="Review Author" />
-                </div>
-                <div class="fauthor__info d-flex flex-column justify-content-center">
-                  <h4 class="fauthor__name">{project.feedback.author}</h4>
-                  <p class="fauthor__position small">
-                    {project.feedback.position}
-                  </p>
-                  <div class="fauthor__rating d-flex">
-                    {
-                      Array.from({ length: project.feedback.rating }, (_, i) => (
-                        <i class="ph-fill ph-star" />
-                      ))
-                    }
-                  </div>
-                </div>
-              </div>
-              <div class="feedback__descr">
-                <p class="type-basic-160lh">
-                  {project.feedback.text}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- project divider line -->
-    <div class="project__divider"></div>
-  </div>
+
   <!-- Project Block - Client's Feedback End -->
 
   <!-- Project Block - Project Link Start -->

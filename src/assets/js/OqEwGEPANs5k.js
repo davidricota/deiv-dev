@@ -391,6 +391,43 @@ splitTypes.forEach((char, i) => {
 // --------------------------------------------- //
 
 // --------------------------------------------- //
+// Section Titles Font Weight Animation Start
+// --------------------------------------------- //
+const sectionTitles = document.querySelectorAll("h2.reveal-type, h1.reveal-type");
+
+sectionTitles.forEach((title) => {
+  const text = new SplitType(title, { types: "words, chars" });
+
+  // Set initial fontWeight and opacity
+  text.chars.forEach((char) => {
+    char.style.fontWeight = 100;
+    char.style.opacity = 0.2;
+    char.style.fontVariationSettings = "'wght' 100";
+  });
+
+  gsap.to(text.chars, {
+    scrollTrigger: {
+      trigger: title,
+      start: "top 80%",
+      end: "top 20%",
+      scrub: true,
+      markers: false,
+    },
+    opacity: 1,
+    fontWeight: 800,
+    stagger: 0.1,
+    onUpdate: function () {
+      this.targets().forEach((el) => {
+        el.style.fontVariationSettings = "'wght' " + el.style.fontWeight;
+      });
+    },
+  });
+});
+// --------------------------------------------- //
+// Section Titles Font Weight Animation End
+// --------------------------------------------- //
+
+// --------------------------------------------- //
 // Blocks Marquee Start
 // --------------------------------------------- //
 const initMarquee = () => {
@@ -814,4 +851,41 @@ if (typingTitle) {
 }
 // --------------------------------------------- //
 // Typing Effect for Title End
+// --------------------------------------------- //
+
+// --------------------------------------------- //
+// Cards Title Font Weight Animation Start
+// --------------------------------------------- //
+const cardTitles = document.querySelectorAll(".cards__title");
+
+cardTitles.forEach((title) => {
+  const text = new SplitType(title, { types: "words, chars" });
+
+  // Set initial fontWeight and opacity
+  text.chars.forEach((char) => {
+    char.style.fontWeight = 100;
+    char.style.opacity = 0.2;
+    char.style.fontVariationSettings = "'wght' 100";
+  });
+
+  gsap.to(text.chars, {
+    scrollTrigger: {
+      trigger: title,
+      start: "top 80%",
+      end: "top 20%",
+      scrub: true,
+      markers: false,
+    },
+    opacity: 1,
+    fontWeight: 800,
+    stagger: 0.1,
+    onUpdate: function () {
+      this.targets().forEach((el) => {
+        el.style.fontVariationSettings = "'wght' " + el.style.fontWeight;
+      });
+    },
+  });
+});
+// --------------------------------------------- //
+// Cards Title Font Weight Animation End
 // --------------------------------------------- //

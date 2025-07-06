@@ -1,5 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import { Image } from "astro:assets";
 import { portfolio } from "../../data/site.js";
 ---
 
@@ -21,7 +22,12 @@ import { portfolio } from "../../data/site.js";
                       <div class="portfolio-item">
                         <a href={`/portfolio/${project.slug}`} class="portfolio-link">
                           <div class="portfolio-image">
-                            <img src={project.images.portrait} alt={project.title} />
+                            <Image
+                              src={project.images.portrait}
+                              alt={project.title}
+                              width={400}
+                              height={300}
+                            />
                           </div>
                           <div class="portfolio-info">
                             <h3>{project.title}</h3>

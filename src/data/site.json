@@ -1,64 +1,107 @@
 {
+    "content": {
+        "mainSection": {
+            "tagline": [
+                "Not the typical developer.",
+                "Code is strong with this one."
+            ],
+            "blockquote": "I build modern digital products — JavaScript, WordPress, SaaS — with clarity, design thinking and a touch of the Force."
+        },
+        "sections": {
+            "about": {
+                "name": "About me",
+                "subtitle": "Discover my journey from design to development"
+            },
+            "services": {
+                "name": "Services",
+                "subtitle": "What I can do for you"
+            },
+            "portfolio": {
+                "name": "Portfolio",
+                "subtitle": "My latest projects and work"
+            },
+            "resume": {
+                "name": "Resume",
+                "subtitle": "My professional journey"
+            },
+            "contact": {
+                "name": "Contact",
+                "title": "Hello there!",
+                "description": "Got a project in mind? Want to build something together? Or just want to say hi? You can find me on the platforms below — I'm always open to chat, collaborate or explore new ideas. Let's connect."
+            }
+        },
+        "resume": {
+            "workExperience": "Work Experience",
+            "keySkills": "Key Skills",
+            "education": "Education"
+        },
+        "footer": {
+            "location": "Location",
+            "phone": "Phone",
+            "email": "Email"
+        },
+        "achievements": {
+            "happyClients": {
+                "number": "40+",
+                "description": "Happy clients"
+            },
+            "experience": {
+                "number": "2+",
+                "description": "Years of experience"
+            },
+            "projects": {
+                "number": "50+",
+                "description": "Projects done"
+            }
+        },
+        "navigation": {
+            "home": "Home",
+            "services": "Services",
+            "portfolio": "Portfolio",
+            "about": "About Me",
+            "resume": "Resume",
+            "contact": "Contact"
+        }
+    },
     "about": {
-        "title": "My <span>Developer's Path</span>",
+        "title": "My <span>Dev Path</span>",
         "sections": [
             {
                 "id": "01",
-                "subtitle": "The Beginning",
-                "content": "I'm not the typical developer. A long time ago, my journey began — over 20 years ago — as a young padawan discovering the early powers of <span class=\"font-bold\">visuals</span>, <span class=\"italic\">motion</span>, and <span class=\"font-bold italic\">detail</span>. That's where the first skills took shape: <span class=\"font-bold\">pixel-perfect layouts</span>, <span class=\"italic\">smooth interactions</span>, and <span class=\"font-bold\">interfaces that felt alive</span>."
+                "subtitle": "Origins",
+                "content": "I'm not the typical developer. A long time ago, my journey began — over 20 years ago — as a young padawan discovering the early powers of <span class=\"font-bold\">visuals</span>, <span class=\"italic\">motion</span>, and <span class=\"font-bold italic\">detail</span>. First came <span class=\"font-bold\">pixel-perfect layouts</span>, <span class=\"italic\">smooth interactions</span>, and <span class=\"font-bold\">interfaces that felt alive</span>. Then came the other side — <span class=\"font-bold\">solving challenges</span>, <span class=\"italic\">building integrations</span>, and <span class=\"font-bold\">connecting systems</span>. Some call it <span class=\"italic\">the dark side of development</span>. I call it <span class=\"font-bold\">balance</span>."
             },
             {
                 "id": "02",
-                "subtitle": "The Evolution",
-                "content": "But style alone wasn't enough. The real power came when I embraced the other side of the stack — <span class=\"font-bold\">solving complex challenges</span>, <span class=\"italic\">building integrations</span>, and <span class=\"font-bold\">connecting systems</span>. Some might call it <span class=\"italic\">the dark side of development</span>. I call it <span class=\"font-bold\">balance</span>."
+                "subtitle": "Now",
+                "content": "Today, I walk the path of <span class=\"font-bold\">product design</span> — blending <span class=\"italic\">strategy</span>, <span class=\"italic\">UX thinking</span> and fullstack execution. It's not just about how to build — but <span class=\"font-bold\">what</span>, <span class=\"font-bold\">why</span> and <span class=\"font-bold\">for whom</span>."
             },
             {
                 "id": "03",
-                "subtitle": "The Present",
-                "content": "Today, I'm walking the path of <span class=\"font-bold\">product design</span> — adding <span class=\"italic\">strategy</span> and <span class=\"italic\">UX thinking</span> to my toolkit, aiming to understand not just <span class=\"font-bold\">how to build</span>, but <span class=\"font-bold\">what to build</span> and <span class=\"font-bold\">why</span>."
-            },
-            {
-                "id": "04",
-                "subtitle": "The Mission",
-                "content": "I <span class=\"font-bold\">create to solve</span>. For <span class=\"italic\">clients</span>. For <span class=\"italic\">users</span>. For the <span class=\"font-bold\">products I believe in</span>. My focus is on <span class=\"font-bold\">helping digital products grow with clarity</span> — and shaping the <span class=\"italic\">tools I'd want to use myself</span>."
-            },
-            {
-                "id": "05",
-                "subtitle": "The Learning",
-                "content": "A developer's journey is <span class=\"font-bold\">never done</span>. New tools, new mindsets, new challenges — I keep learning to stay <span class=\"italic\">sharp</span>, <span class=\"italic\">adaptable</span>, and <span class=\"italic\">ready for what's next</span>."
-            },
-            {
-                "id": "06",
-                "subtitle": "The Vision",
-                "content": "Beyond code and design, I believe in <span class=\"font-bold\">building things that last</span> — <span class=\"italic\">products with purpose</span>, <span class=\"italic\">interfaces that matter</span>, and <span class=\"font-bold\">ideas that evolve into something real</span>."
-            },
-            {
-                "id": "07",
-                "subtitle": "The Future",
-                "content": "<span class=\"font-bold\">Ideas become products.</span> <span class=\"italic\">Side-projects become platforms.</span> I'm <span class=\"font-bold\">building tools to help others</span> — and to power <span class=\"italic\">my own vision</span>.",
-                "additional": "Always curious. Always building. Always delivering."
+                "subtitle": "Forward",
+                "content": "Learning never stops. I stay <span class=\"italic\">curious</span>, <span class=\"italic\">adaptable</span> and <span class=\"italic\">ready</span> for what's next. I believe in <span class=\"font-bold\">building things that last</span> — <span class=\"italic\">products with purpose</span> and <span class=\"font-bold\">tools I'd want to use myself</span>."
             }
         ],
         "achievements": [
             {
                 "icon": "ph ph-trophy",
                 "title": "20+ Years",
-                "description": "Experience in web development and design"
+                "description": "Experience crafting digital solutions"
             },
             {
                 "icon": "ph ph-users",
                 "title": "100+ Projects",
-                "description": "Successfully delivered to satisfied clients"
+                "description": "Shipped for clients and studios"
             },
             {
                 "icon": "ph ph-rocket",
                 "title": "10+ Products",
-                "description": "Built and launched from concept to market"
+                "description": "Launched from concept to market"
             },
             {
                 "icon": "ph ph-star",
                 "title": "5+ Awards",
-                "description": "Recognition for design and development excellence"
+                "description": "Recognized for design & dev excellence"
             }
         ],
         "contact": {
@@ -113,6 +156,44 @@
             "stack": "Astro, Stripe, Supabase, Auth, Mixpanel, GA4",
             "image": "PiURthOLcyQ6.webp",
             "alt": "SaaS & Product Strategy"
+        }
+    ],
+    "contactText": {
+        "title": "Hello there!",
+        "description": "Got a project in mind? Want to build something together? Or just want to say hi?\n\nYou can find me on the platforms below — I'm always open to chat, collaborate or explore new ideas. Let's connect.\n\nAlways curious. Always building."
+    },
+    "tagline": {
+        "hero": [
+            "Not the typical developer.",
+            "Code is strong with this one."
+        ],
+        "summary": "I see code as craft, not just syntax. I build modern digital products — JavaScript, WordPress, SaaS — with clarity, design thinking and a touch of the Force."
+    },
+    "social": [
+        {
+            "href": "https://wa.me/5491135745491",
+            "label": "Whatsapp",
+            "icon": "ph ph-whatsapp-logo"
+        },
+        {
+            "href": "https://linkedin.com/in/davidverta",
+            "label": "LinkedIn",
+            "icon": "ph ph-linkedin-logo"
+        },
+        {
+            "href": "mailto:me@deiv.dev",
+            "label": "Email",
+            "icon": "ph ph-envelope"
+        },
+        {
+            "href": "https://github.com/davidricota",
+            "label": "GitHub",
+            "icon": "ph ph-github-logo"
+        },
+        {
+            "href": "https://gitlab.com/davidricota",
+            "label": "GitLab",
+            "icon": "ph ph-gitlab-logo"
         }
     ],
     "resume": {
@@ -175,15 +256,15 @@
     "portfolio": [
         {
             "id": 1,
-            "slug": "blayden-portfolio-template",
-            "title": "Blayden portfolio template",
-            "type": "HTML template",
-            "date": "30.05.2024",
-            "role": "UI/UX designer",
-            "client": "Mix Design",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus!",
-            "challenge": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente.",
-            "solution": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum.",
+            "slug": "plancito-com",
+            "title": "Plancito.com",
+            "type": "Web App",
+            "date": "15.06.2025",
+            "role": "Founder & Fullstack Developer",
+            "client": "Personal Project",
+            "description": "Plancito.com is a social event planning app designed to simplify group gatherings. It allows users to create events, manage invites, collaborate on playlists, split expenses, and organize tasks seamlessly.",
+            "challenge": "Building a collaborative, real-time platform that handles multiple event management features while keeping the UX intuitive and mobile-friendly.",
+            "solution": "Implemented a full-stack solution with React, Supabase, and TailwindCSS, integrating real-time updates, expense tracking, and task management features into a cohesive user experience.",
             "images": {
                 "portrait": "tx14poT20GdO.webp",
                 "landscape": "Lc3LTm25uqwZ.webp",
@@ -197,25 +278,25 @@
                 ]
             },
             "feedback": {
-                "author": "Natalia Pineapple",
+                "author": "Deiv",
                 "avatar": "fkV97TVC0hBz.webp",
-                "position": "SEO in Mix Design",
+                "position": "Founder",
                 "rating": 5,
-                "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud."
+                "text": "Plancito.com is the product of my passion for building tools that make social planning effortless and fun."
             },
-            "projectUrl": "#0"
+            "projectUrl": "https://plancito.com"
         },
         {
             "id": 2,
-            "slug": "anime-style-fantasy-scenes",
-            "title": "Anime style fantasy scenes",
-            "type": "Illustrations",
-            "date": "23.05.2024",
-            "role": "Illustrator",
-            "client": "Editorial",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus!",
-            "challenge": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente.",
-            "solution": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum.",
+            "slug": "gymstagram",
+            "title": "Gymstagram",
+            "type": "Mobile App",
+            "date": "01.05.2025",
+            "role": "Lead Developer & UX Designer",
+            "client": "Fitness Startup",
+            "description": "Gymstagram is a community-driven fitness social network where users can share workouts, progress photos, and motivate each other with challenges and achievements.",
+            "challenge": "Creating a performant, engaging social platform focused on fitness, while ensuring privacy and smooth multimedia content sharing.",
+            "solution": "Developed the app using React Native and Firebase, enabling real-time chats, media uploads, gamification features, and a scalable backend to handle growth.",
             "images": {
                 "portrait": "haAG1CSuokNC.webp",
                 "landscape": "nRUdnIUUEcDC.webp",
@@ -229,25 +310,25 @@
                 ]
             },
             "feedback": {
-                "author": "Ashley Cherry",
+                "author": "Fitness Startup CEO",
                 "avatar": "Lp5lj6gS26qU.webp",
-                "position": "UX designer in Mix Design",
+                "position": "Client",
                 "rating": 5,
-                "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud."
+                "text": "Gymstagram transformed our community engagement and grew our user base exponentially."
             },
-            "projectUrl": "#0"
+            "projectUrl": "https://gymstagram.app"
         },
         {
             "id": 3,
-            "slug": "x101-flexible-speaker",
-            "title": "X101 flexible speaker",
-            "type": "3D model",
-            "date": "27.05.2024",
-            "role": "Product designer",
-            "client": "Editorial",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus!",
-            "challenge": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente.",
-            "solution": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum.",
+            "slug": "turnogram",
+            "title": "Turnogram",
+            "type": "Scheduling Platform",
+            "date": "20.03.2025",
+            "role": "Fullstack Developer",
+            "client": "Turnogram Inc.",
+            "description": "Turnogram is a platform to manage appointments for professionals and studios, enabling booking, calendar sync, payment integration, and client management.",
+            "challenge": "Building a flexible and scalable appointment system supporting multiple professions, time zones, and payment gateways.",
+            "solution": "Developed using Next.js, Node.js, and integrated MercadoPago API for seamless payments. The system supports multi-user roles and dynamic scheduling rules.",
             "images": {
                 "portrait": "lCMiZXHZnDTu.webp",
                 "landscape": "W3ZACC8qYFkS.webp",
@@ -263,72 +344,45 @@
                 ]
             },
             "feedback": {
-                "author": "Alex Tomato",
+                "author": "Turnogram Product Manager",
                 "avatar": "oCArFB4XWIKr.webp",
-                "position": "Brand Manager in Mix Design",
+                "position": "Client",
                 "rating": 5,
-                "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud."
+                "text": "Turnogram streamlined our booking process and significantly improved customer satisfaction."
             },
-            "projectUrl": "#0"
+            "projectUrl": "https://turnogram.com"
         },
         {
             "id": 4,
-            "slug": "reflection-ai-project",
-            "title": "Reflection AI project",
-            "type": "AI images",
-            "date": "30.05.2024",
-            "role": "Prompt creator",
-            "client": "Editorial",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus!",
-            "challenge": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente.",
-            "solution": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum, quas nisi doloribus! Id aliquam error corrupti inventore sapiente. Voluptates sequi laudantium quasi beatae, modi, explicabo quo voluptas quae enim culpa ipsum.",
+            "slug": "wp-plugins-headless-landings",
+            "title": "WordPress Plugins & Headless Landings",
+            "type": "Plugin & Web Development",
+            "date": "Ongoing",
+            "role": "Plugin Developer & Frontend Engineer",
+            "client": "Various Clients",
+            "description": "Development of custom WordPress plugins to extend CMS capabilities, combined with headless JavaScript frontends for high-performance landing pages.",
+            "challenge": "Balancing the power of WordPress backend flexibility with modern, fast frontend experiences using React and Astro.",
+            "solution": "Built plugins with PHP and ACF, while creating decoupled frontends with React and Astro for lightning-fast page loads and improved SEO.",
             "images": {
                 "portrait": "G6F8Plx0ph4E.webp",
-                "landscape": "ISHoDC32u5Aj.webp",
+                "landscape": "uAps1RXO43zs.webp",
                 "fullwidth": [
-                    "lN8gII45sYbY.webp",
-                    "UdtIopVrUSOH.webp"
+                    "UdtIopVrUSOH.webp",
+                    "WL9Z2Qsyd56d.svg"
                 ],
                 "grid": [
-                    "uAps1RXO43zs.webp",
-                    "TFvGMpVxfHfG.webp"
+                    "TFvGMpVxfHfG.webp",
+                    "euQ6b0lIZXNh.webp"
                 ]
             },
             "feedback": {
-                "author": "Jenna Lemon",
-                "avatar": "euQ6b0lIZXNh.webp",
-                "position": "SEO in Mix Design",
+                "author": "Various Clients",
+                "avatar": "TsS2fDCd8e5S.jpg",
+                "position": "Client",
                 "rating": 5,
-                "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud."
+                "text": "The combination of WordPress flexibility with modern frontend performance has been a game-changer for our projects."
             },
-            "projectUrl": "#0"
-        }
-    ],
-    "social": [
-        {
-            "href": "https://wa.me/5491135745491",
-            "label": "Whatsapp",
-            "icon": "ph ph-whatsapp-logo"
-        },
-        {
-            "href": "https://linkedin.com/in/davidverta",
-            "label": "LinkedIn",
-            "icon": "ph ph-linkedin-logo"
-        },
-        {
-            "href": "mailto:me@deiv.dev",
-            "label": "Email",
-            "icon": "ph ph-envelope"
-        },
-        {
-            "href": "https://github.com/davidricota",
-            "label": "GitHub",
-            "icon": "ph ph-github-logo"
-        },
-        {
-            "href": "https://gitlab.com/davidricota",
-            "label": "GitLab",
-            "icon": "ph ph-gitlab-logo"
+            "projectUrl": "#"
         }
     ]
 }

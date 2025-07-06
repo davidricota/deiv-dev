@@ -10,7 +10,7 @@ import Lc3LTm25uqwZ from "@/assets/images/Lc3LTm25uqwZ.webp";
 import sVpwMmXLMwwW from "@/assets/images/sVpwMmXLMwwW.webp";
 import rBkB6zdUG2vu from "@/assets/images/rBkB6zdUG2vu.webp";
 import huKpgxHIz8aF from "@/assets/images/huKpgxHIz8aF.webp";
-import UN8pEkGGLJn from "@/assets/images/7UN8pEkGGLJn.webp";
+import sevenUN8pEkGGLJn from "@/assets/images/7UN8pEkGGLJn.webp";
 import fkV97TVC0hBz from "@/assets/images/fkV97TVC0hBz.webp";
 import haAG1CSuokNC from "@/assets/images/haAG1CSuokNC.webp";
 import nRUdnIUUEcDC from "@/assets/images/nRUdnIUUEcDC.webp";
@@ -35,6 +35,8 @@ import UdtIopVrUSOH from "@/assets/images/UdtIopVrUSOH.webp";
 import uAps1RXO43zs from "@/assets/images/uAps1RXO43zs.webp";
 import TFvGMpVxfHfG from "@/assets/images/TFvGMpVxfHfG.webp";
 import euQ6b0lIZXNh from "@/assets/images/euQ6b0lIZXNh.webp";
+import WL9Z2Qsyd56d from "@/assets/images/WL9Z2Qsyd56d.svg";
+import TsS2fDCd8e5S from "@/assets/images/TsS2fDCd8e5S.jpg";
 
 // Mapeo de imágenes para services
 const serviceImages = {
@@ -51,7 +53,7 @@ const portfolioImages = {
   "sVpwMmXLMwwW.webp": sVpwMmXLMwwW,
   "rBkB6zdUG2vu.webp": rBkB6zdUG2vu,
   "huKpgxHIz8aF.webp": huKpgxHIz8aF,
-  "7UN8pEkGGLJn.webp": UN8pEkGGLJn,
+  "7UN8pEkGGLJn.webp": sevenUN8pEkGGLJn,
   "fkV97TVC0hBz.webp": fkV97TVC0hBz,
   "haAG1CSuokNC.webp": haAG1CSuokNC,
   "nRUdnIUUEcDC.webp": nRUdnIUUEcDC,
@@ -76,6 +78,8 @@ const portfolioImages = {
   "uAps1RXO43zs.webp": uAps1RXO43zs,
   "TFvGMpVxfHfG.webp": TFvGMpVxfHfG,
   "euQ6b0lIZXNh.webp": euQ6b0lIZXNh,
+  "WL9Z2Qsyd56d.svg": WL9Z2Qsyd56d,
+  "TsS2fDCd8e5S.jpg": TsS2fDCd8e5S,
 };
 
 // Función para procesar imágenes de portfolio
@@ -112,7 +116,7 @@ export function getSiteData() {
 }
 
 // Exportar secciones específicas
-export const { about, resume, social } = siteData;
+export const { about, resume, social, content } = siteData;
 
 // Exportar services con imágenes procesadas
 export const services = getSiteData().services;

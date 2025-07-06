@@ -1641,9 +1641,6 @@ blockquote {
 }
 
 .btn-to-top {
-  position: fixed;
-  right: 2rem;
-  bottom: 2rem;
   width: 4rem;
   height: 4rem;
   -moz-border-radius: var(--_radius-s);
@@ -1655,6 +1652,8 @@ blockquote {
   font-size: 1.8rem;
   z-index: 9;
   overflow: hidden;
+  border: 1px solid #ffffff1a;
+  box-shadow: 0 2px 75px #0003;
 }
 .btn-to-top i {
   display: -webkit-inline-box;
@@ -1664,13 +1663,7 @@ blockquote {
   position: relative;
   overflow: hidden;
 }
-@media only screen and (min-width: 768px) {
-  .btn-to-top {
-    position: fixed;
-    right: 5rem;
-    bottom: 3rem;
-  }
-}
+
 @media only screen and (min-width: 1200px) {
   .btn-to-top {
     font-size: 1.9rem;
@@ -4172,6 +4165,8 @@ form textarea:required:valid {
 .logo__link svg {
   width: auto;
   height: 4rem;
+  fill: var(--t-bright);
+  transition: fill 0.3s ease;
 }
 .logo__link span {
   display: -webkit-inline-box;
@@ -4230,7 +4225,10 @@ form textarea:required:valid {
   outline: 0;
   padding: 0;
   font: inherit;
-  background-color: var(--neutral-bright);
+  background: linear-gradient(90deg, #fff 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: left;
+  transition: background-position 0.4s ease;
   cursor: pointer;
   text-decoration: none;
   -webkit-user-select: none;
@@ -4241,6 +4239,33 @@ form textarea:required:valid {
   height: 1.8rem;
   -moz-border-radius: 50%;
   border-radius: 50%;
+}
+html[color-scheme="dark"] .color-switcher {
+  background-position: left; /* muestra el lado negro */
+}
+
+html[color-scheme="light"] .color-switcher {
+  background-position: right; /* muestra el lado blanco */
+}
+
+/* Logo color changes for dark/light themes */
+html[color-scheme="dark"] .logo__link svg,
+html[color-scheme="dark"] .footer-logo svg {
+  fill: var(--t-bright);
+}
+
+html[color-scheme="light"] .logo__link svg,
+html[color-scheme="light"] .footer-logo svg {
+  fill: var(--t-bright);
+}
+
+/* Button border color changes for dark/light themes */
+html[color-scheme="dark"] .btn-line {
+  border-color: var(--t-bright);
+}
+
+html[color-scheme="light"] .btn-line {
+  border-color: var(--t-bright);
 }
 @media only screen and (min-width: 768px) {
   .color-switcher {
@@ -4534,6 +4559,8 @@ form textarea:required:valid {
 .footer-logo svg {
   width: 4rem;
   height: auto;
+  fill: var(--t-bright);
+  transition: fill 0.3s ease;
 }
 .footer-logo span {
   display: -webkit-inline-box;
@@ -7192,4 +7219,24 @@ form textarea:required:valid {
   .typing-text {
     font-size: calc(0.5em + 5vw);
   }
+}
+
+html[color-scheme="light"] .btn-line {
+  border-color: var(--base--dark);
+}
+
+/* Button hover effects for light theme */
+html[color-scheme="light"] .btn-line:hover {
+  background-color: var(--base--dark);
+  color: var(--base--light);
+}
+
+html[color-scheme="dark"] .btn-line {
+  border-color: var(--t-bright);
+}
+
+/* Button hover effects for dark theme */
+html[color-scheme="dark"] .btn-line:hover {
+  background-color: var(--t-bright);
+  color: var(--t-opp-bright);
 }
