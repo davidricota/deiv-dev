@@ -58,39 +58,35 @@ const { project } = Astro.props;
   <!-- Project Block - Description Start -->
   <div class="project__block grid-block grid-items">
     <div class="project__data">
-      <div class="container-fluid p-0">
-        <div class="row g-0">
-          <div class="col-12 col-xl-4">
-            <div class="container-fluid p-0">
-              <div class="row g-0">
-                <!-- project data single item -->
-                <div class="col-12 col-md-6 grid-item pdata__item">
-                  <p class="data__title tagline-chapter small type-basic-160lh">Type</p>
-                  <p class="data__descr small type-basic-160lh">{project.type}</p>
-                </div>
-                <!-- project data single item -->
-                <div class="col-12 col-md-6 grid-item pdata__item">
-                  <p class="data__title tagline-chapter small type-basic-160lh">Date</p>
-                  <p class="data__descr small type-basic-160lh">{project.date}</p>
-                </div>
-                <!-- project data single item -->
-                <div class="col-12 col-md-6 grid-item pdata__item">
-                  <p class="data__title tagline-chapter small type-basic-160lh">Role</p>
-                  <p class="data__descr small type-basic-160lh">{project.role}</p>
-                </div>
-                <!-- project data single item -->
-                <div class="col-12 col-md-6 grid-item pdata__item">
-                  <p class="data__title tagline-chapter small type-basic-160lh">Client</p>
-                  <p class="data__descr small type-basic-160lh">{project.client}</p>
-                </div>
-              </div>
+      <div class="grid grid-cols-1 xl:grid-cols-12 gap-8">
+        <div class="xl:col-span-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- project data single item -->
+            <div class="grid-item pdata__item">
+              <p class="data__title tagline-chapter small type-basic-160lh">Type</p>
+              <p class="data__descr small type-basic-160lh">{project.type}</p>
+            </div>
+            <!-- project data single item -->
+            <div class="grid-item pdata__item">
+              <p class="data__title tagline-chapter small type-basic-160lh">Date</p>
+              <p class="data__descr small type-basic-160lh">{project.date}</p>
+            </div>
+            <!-- project data single item -->
+            <div class="grid-item pdata__item">
+              <p class="data__title tagline-chapter small type-basic-160lh">Role</p>
+              <p class="data__descr small type-basic-160lh">{project.role}</p>
+            </div>
+            <!-- project data single item -->
+            <div class="grid-item pdata__item">
+              <p class="data__title tagline-chapter small type-basic-160lh">Client</p>
+              <p class="data__descr small type-basic-160lh">{project.client}</p>
             </div>
           </div>
-          <div class="col-12 col-xl-8 grid-item">
-            <p class="type-basic-160lh">
-              {project.description}
-            </p>
-          </div>
+        </div>
+        <div class="xl:col-span-8 grid-item">
+          <p class="type-basic-160lh">
+            {project.description}
+          </p>
         </div>
       </div>
     </div>
@@ -113,16 +109,14 @@ const { project } = Astro.props;
   <!-- Project Block - The Challenge Start -->
   <div class="project__block pre-grid-items">
     <div class="project__descr">
-      <div class="container-fluid p-0">
-        <div class="row g-0">
-          <div class="col-12 col-xl-4">
-            <p class="project__subtitle tagline-chapter">The challenge</p>
-          </div>
-          <div class="col-12 col-xl-8">
-            <p class="type-basic-160lh">
-              {project.challenge}
-            </p>
-          </div>
+      <div class="grid grid-cols-1 xl:grid-cols-12 gap-8">
+        <div class="xl:col-span-4">
+          <p class="project__subtitle tagline-chapter">The challenge</p>
+        </div>
+        <div class="xl:col-span-8">
+          <p class="type-basic-160lh">
+            {project.challenge}
+          </p>
         </div>
       </div>
     </div>
@@ -132,20 +126,16 @@ const { project } = Astro.props;
   <!-- Project Block - Illustrations Grid Start -->
   <div class="project__block grid-block no-margin">
     <div class="project__illustrations">
-      <div class="container-fluid p-0">
-        <div class="row g-0">
-          {
-            project.images.grid.map((image, index) => (
-              <div
-                class={`col-12 col-md-6 ${project.images.grid.length > 2 ? "col-xl-3" : ""} grid-item`}
-              >
-                <div class="project__illustration">
-                  <Image width={512} height={512} src={image} alt="Work Illustration" />
-                </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+        {
+          project.images.grid.map((image, index) => (
+            <div class="grid-item">
+              <div class="project__illustration">
+                <Image width={512} height={512} src={image} alt="Work Illustration" />
               </div>
-            ))
-          }
-        </div>
+            </div>
+          ))
+        }
       </div>
     </div>
   </div>
@@ -154,16 +144,14 @@ const { project } = Astro.props;
   <!-- Project Block - My Solution Start -->
   <div class="project__block">
     <div class="project__descr">
-      <div class="container-fluid p-0">
-        <div class="row g-0">
-          <div class="col-12 col-xl-4">
-            <p class="project__subtitle tagline-chapter">My solution</p>
-          </div>
-          <div class="col-12 col-xl-8">
-            <p class="type-basic-160lh">
-              {project.solution}
-            </p>
-          </div>
+      <div class="grid grid-cols-1 xl:grid-cols-12 gap-8">
+        <div class="xl:col-span-4">
+          <p class="project__subtitle tagline-chapter">My solution</p>
+        </div>
+        <div class="xl:col-span-8">
+          <p class="type-basic-160lh">
+            {project.solution}
+          </p>
         </div>
       </div>
     </div>
@@ -189,15 +177,11 @@ const { project } = Astro.props;
 
   <!-- Project Block - Project Link Start -->
   <div class="project__block small-size">
-    <div class="container-fluid p-0">
-      <div class="row g-0">
-        <div class="col-12 d-flex justify-content-center">
-          <a class="btn btn-circle-text hover-circle" href={project.projectUrl} target="_blank">
-            <em></em>
-            <span class="btn-caption">Project page</span>
-          </a>
-        </div>
-      </div>
+    <div class="flex justify-center">
+      <a class="btn btn-circle-text" href={project.projectUrl} target="_blank">
+        <em></em>
+        <span class="btn-caption">Project page</span>
+      </a>
     </div>
   </div>
   <!-- Project Block - Project Link End -->

@@ -6180,8 +6180,44 @@ html[color-scheme="light"] .btn-line {
   font-weight: 300;
 }
 
+.portfolio-stack__tagline {
+  margin-top: 1rem;
+  font-weight: 400;
+  color: var(--t-per-bright-light);
+  opacity: 0.8;
+}
+.portfolio-stack__tagline.dark {
+  font-weight: 500;
+  color: var(--t-per-bright-dark);
+  opacity: 0.9;
+}
+.portfolio-stack__tagline.light {
+  font-weight: 400;
+  color: var(--neutral-white);
+  opacity: 0.8;
+}
+
+.portfolio-stack__tagline .tagline-concept {
+  font-weight: 700;
+}
+.portfolio-stack__tagline .tagline-tech {
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio-stack__tagline .tagline-tech {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .portfolio-stack__descr {
+    max-width: 50%;
+  }
+}
+
 .portfolio-stack__text {
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-weight: 300;
   color: var(--t-per-bright-light);
 }

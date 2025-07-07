@@ -18,14 +18,11 @@ import { portfolio } from "@/data/site.js";
                 href={`/portfolio/${project.slug}`}
                 class={`portfolio-stack__inner portfolio-item-${index + 1} popup-trigger`}
               >
-                <div class="portfolio-stack__descr">
-                  <h3 class={`portfolio-stack__title ${index % 2 === 0 ? "dark" : "light"}`}>
-                    {project.title}
-                  </h3>
-                  <p
-                    class={`portfolio-stack__text type-basic-160lh ${index % 2 === 0 ? "dark" : "light"}`}
-                  >
-                    {project.description.substring(0, 100)}...
+                <div class="absolute bottom-0 left-0 w-full px-10 py-12 bg-gradient-to-t from-black/35 from-25% to-black/0 to-100%">
+                  <h3 class="font-bold text-white">{project.title}</h3>
+                  <p class="portfolio-stack__tagline type-basic-140lh text-white">
+                    <span class="tagline-concept">{project.tagline.split(" • ")[0]}</span>
+                    <span class="tagline-tech"> • {project.tagline.split(" • ")[1]}</span>
                   </p>
                 </div>
               </a>
