@@ -19,21 +19,8 @@ const { project } = Astro.props;
     <!-- Popup Close Button Start -->
     <button class="mfp-close permanent-light"></button>
     <!-- Popup Close Button End -->
-    <div class="container-fluid p-0">
-      <div class="row g-0">
-        <div class="col-12">
-          <div class="popup__container">
-            <div class="container-fluid p-0">
-              <div class="row g-0">
-                <div class="col-12">
-                  <ProjectDetail project={project} />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
+    <ProjectDetail project={project} />
   </div>
 </Layout>
 <!-- Project Detail Page End -->
