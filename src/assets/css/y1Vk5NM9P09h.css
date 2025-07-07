@@ -1090,10 +1090,6 @@ blockquote {
 }
 
 .btn-line {
-  -webkit-box-pack: start;
-  -moz-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
   font: normal var(--font-weight-medium) 1.8rem/1.4 var(--_font-default);
   color: var(--t-bright);
 }
@@ -4300,7 +4296,9 @@ html[color-scheme="light"] .btn-line {
     height: 0;
   }
 }
-
+.mfp-content .header-offset {
+  display: none;
+}
 /* ------------------------------------------------*/
 /* Blocks Header End */
 /* ------------------------------------------------*/
@@ -5916,11 +5914,11 @@ html[color-scheme="light"] .btn-line {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 15rem;
+  height: 10rem;
   background-color: var(--base);
 }
 .stack-offset.solid-block {
-  height: 15rem;
+  height: 10rem;
 }
 @media only screen and (min-width: 768px) {
   .stack-offset {
@@ -6202,6 +6200,12 @@ html[color-scheme="light"] .btn-line {
 }
 .portfolio-stack__tagline .tagline-tech {
   font-weight: 400;
+}
+
+.dynamic-bg {
+  background-image: var(--bg-url);
+  background-size: cover;
+  background-position: center;
 }
 
 @media only screen and (max-width: 767px) {

@@ -16,10 +16,11 @@ import { portfolio } from "@/data/site.js";
             <div class="stack-item">
               <a
                 href={`/portfolio/${project.slug}`}
-                class={`portfolio-stack__inner portfolio-item-${index + 1} popup-trigger`}
+                class="portfolio-stack__inner popup-trigger relative dynamic-bg"
+                style={`--bg-url: url('${typeof project.images.landscape === "string" ? project.images.landscape : (project.images.landscape as any).src}')`}
               >
                 <div class="absolute bottom-0 left-0 w-full px-10 py-12 bg-gradient-to-t from-black/35 from-25% to-black/0 to-100%">
-                  <h3 class="font-bold text-white">{project.title}</h3>
+                  <h3 class="font-bold !text-white">{project.title}</h3>
                   <p class="portfolio-stack__tagline type-basic-140lh text-white">
                     <span class="tagline-concept">{project.tagline.split(" • ")[0]}</span>
                     <span class="tagline-tech"> • {project.tagline.split(" • ")[1]}</span>

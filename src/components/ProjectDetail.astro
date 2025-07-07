@@ -178,9 +178,14 @@ const { project } = Astro.props;
   <!-- Project Block - Project Link Start -->
   <div class="project__block small-size">
     <div class="flex justify-center">
-      <a class="btn btn-circle-text" href={project.projectUrl} target="_blank">
+      <a
+        class="btn-line group border solid w-full md:w-fit rounded-full px-12 py-8 flex justify-center gap-2 items-center transition"
+        href={project.projectUrl}
+        target="_blank"
+      >
         <em></em>
-        <span class="btn-caption">Project page</span>
+        <span class="text-2xl">CHECK PROJECT</span>
+        <i class="ph ph-arrow-up-right"></i>
       </a>
     </div>
   </div>

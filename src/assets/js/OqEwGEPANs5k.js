@@ -903,7 +903,6 @@ servicesTitles.forEach((title) => {
   text.chars.forEach((char) => {
     char.style.fontWeight = 800;
     char.style.fontVariationSettings = "'wght' 800";
-    char.style.textShadow = "none";
     char.style.opacity = 0.3;
   });
 
@@ -916,7 +915,6 @@ servicesTitles.forEach((title) => {
       markers: false,
     },
     opacity: 1,
-    textShadow: "0 0 20px rgba(255, 255, 255, 0.8)",
     stagger: 0.1,
   });
 });
