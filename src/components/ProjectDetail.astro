@@ -36,13 +36,6 @@ const { project } = Astro.props;
   <!-- Project Block - Title with Image Start -->
   <div class="project__block no-padding no-margin project-image-bg">
     <Image
-      width={600}
-      height={800}
-      class="project-image-bg__portrait aspect-3/4 object-cover"
-      src={project.images.portrait}
-      alt={project.title}
-    />
-    <Image
       class="object-cover w-full h-full max-h-150"
       src={project.images.landscape}
       alt={project.title}
