@@ -23,29 +23,26 @@ import { services } from "@/data/site.js";
 
         <!-- Grid de servicios -->
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
           {
             services.map((service, index) => (
-              <div class="cards__item animate-card-2">
-                <div class="cards__card flex flex-col ">
-                  <div class="p-8 grow flex flex-col gap-8">
-                    <h4
-                      class="cards__title services-title animate-in-up"
+              <div class="service-card cards__item ">
+                <div class="cards__card flex  rounded-[3.5rem]  flex-col gap-8 p-6 ">
+                  <div class="pt-6 grow ">
+                    <h5
+                      class="cards__title services-title animate-in-up "
                       set:html={service.title}
                     />
-                    <p class="animate-in-up">{service.description}</p>
+                    <p class="small grow animate-in-up ">{service.description}</p>
                   </div>
-                  <div class="rounded-t-4xl overflow-hidden flex animate-in-up">
-                    <div class="w-full min-h-[18.75rem] max-h-72">
-                      <Image
-                        width={400}
-                        height={300}
-                        src={service.image}
-                        alt={service.alt}
-                        class="w-full h-full min-h-[18.75rem] max-h-72 object-cover"
-                      />
-                    </div>
-                  </div>
+
+                  <Image
+                    width={800}
+                    height={533}
+                    src={service.image}
+                    alt={service.alt}
+                    class="service-image aspect-video object-cover rounded-4xl "
+                  />
                 </div>
               </div>
             ))

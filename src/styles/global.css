@@ -192,3 +192,6 @@
     border: 1px solid #ffffff1a;
     box-shadow: 0 2px 75px #0003;
 }
+main {
+    background-color: var(--base);
+}

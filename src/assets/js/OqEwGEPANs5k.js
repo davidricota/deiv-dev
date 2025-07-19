@@ -921,3 +921,43 @@ servicesTitles.forEach((title) => {
 // --------------------------------------------- //
 // Services Title Shadow Animation End
 // --------------------------------------------- //
+
+// --------------------------------------------- //
+// Scroll Animations Service Image Start
+// --------------------------------------------- //
+
+if (document.querySelector(".service-card")) {
+  gsap.set(".service-card", { y: 100, opacity: 0 });
+  ScrollTrigger.batch(".service-card", {
+    interval: 0.1,
+    batchMax: 2,
+    duration: 6,
+    onEnter: (batch) =>
+      gsap.to(
+        batch,
+        {
+          opacity: 1,
+          y: 50,
+          ease: "sine",
+          stagger: { each: 0.15, grid: [1, 2] },
+          overwrite: true,
+        },
+        gsap.from(
+          batch.map((el) => el.querySelector(".service-image")),
+          {
+            opacity: 1,
+            y: "-90%",
+            duration: 1,
+            ease: "power4.inout",
+            stagger: 0.25,
+          }
+        )
+      ),
+    onLeave: (batch) => gsap.set(batch, { opacity: 1, y: 0, overwrite: true }),
+    onEnterBack: (batch) => gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15, overwrite: true }),
+    onLeaveBack: (batch) => gsap.set(batch, { opacity: 0, y: 100, overwrite: true }),
+  });
+  ScrollTrigger.addEventListener("refreshInit", () =>
+    gsap.set(".service-card", { y: 0, opacity: 1 })
+  );
+}

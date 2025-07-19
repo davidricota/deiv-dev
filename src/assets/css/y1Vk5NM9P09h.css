@@ -4438,33 +4438,22 @@ html[color-scheme="light"] .btn-line {
 /* Blocks Footer Start */
 /* ------------------------------------------------*/
 .footer {
-  position: relative;
-  padding: 10.4rem 0 0 0;
-  z-index: 3;
+  background-color: var(--base-90);
 }
 .footer.footer-marquee {
   padding: 12.2rem 0 0 0;
 }
 @media only screen and (min-width: 768px) {
-  .footer {
-    padding: 14.6rem 0 0 0;
-  }
   .footer.footer-marquee {
     padding: 17.2rem 0 0 0;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .footer {
-    padding: 16.1rem 0 9.8rem 0;
-  }
   .footer.footer-marquee {
     padding: 19rem 0 4rem 0;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .footer {
-    padding: 18.1rem 0 9.7rem 0;
-  }
   .footer.footer-marquee {
     padding: 21.7rem 0 4rem 0;
   }
@@ -6392,8 +6381,7 @@ html[color-scheme="light"] .btn-line {
   height: 100%;
   background-color: var(--base);
   border: 1px solid var(--stroke-elements);
-  -moz-border-radius: var(--_radius);
-  border-radius: var(--_radius);
+
   overflow: hidden;
 }
 

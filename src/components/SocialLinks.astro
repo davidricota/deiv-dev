@@ -13,7 +13,7 @@ const { links = [] } = Astro.props;
 <ul class="socials-cards flex justify-center flex-wrap gap-8">
   {
     links.map((link) => (
-      <li class=" size-36 aspect-square rounded-4xl  flex ">
+      <li class=" size-36 md:size-56 aspect-square rounded-4xl  flex ">
         <a
           class="socials-cards__link  flex items-center justify-center aspect-square"
           href={link.href}
@@ -22,7 +22,7 @@ const { links = [] } = Astro.props;
           aria-label={link.label}
         >
           <em class="sr-only" />
-          <i class={`${link.icon} ph`} />
+          <i class={`${link.icon} ph text-7xl`} />
         </a>
       </li>
     ))

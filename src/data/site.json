@@ -124,40 +124,6 @@
             "href": "/pdf/_David_Verta_RESUME.pdf"
         }
     },
-    "services": [
-        {
-            "id": 1,
-            "title": "Fullstack\nDevelopment",
-            "description": "Build from front to back — fast, functional, and scalable. From interfaces to APIs, everything tailored for performance and clarity.",
-            "stack": "Astro, React, Node.js, REST, Vercel, Supabase",
-            "image": "ME1vbM1gADIv.webp",
-            "alt": "Fullstack Development - System Architecture"
-        },
-        {
-            "id": 2,
-            "title": "WordPress &\nWooCommerce&nbsp;Expert",
-            "description": "Custom blocks, dynamic content, optimized shops — with no bloat. Advanced builds using native tools, ACF, CPTs and Woo.",
-            "stack": "PHP, ACF, Gutenberg, WooCommerce, WPML, Custom Themes",
-            "image": "qlq4K7e8e6MK.webp",
-            "alt": "WordPress & WooCommerce Development"
-        },
-        {
-            "id": 3,
-            "title": "Product Design\nThinking",
-            "description": "Design that works — intuitive, aesthetic, and responsive. Focusing on user flows, interaction, and clarity across devices.",
-            "stack": "Figma, Tailwind, Framer Motion, accessibility principles",
-            "image": "fb5kXWj157qL.webp",
-            "alt": "Product Design & UX"
-        },
-        {
-            "id": 4,
-            "title": "SaaS & Product\nStrategy",
-            "description": "From idea to MVP — turning concepts into working products. Helping others (and myself) launch digital tools with purpose.",
-            "stack": "Astro, Stripe, Supabase, Auth, Mixpanel, GA4",
-            "image": "PiURthOLcyQ6.webp",
-            "alt": "SaaS & Product Strategy"
-        }
-    ],
     "contactText": {
         "title": "Hello there!",
         "description": "Got a project in mind? Want to build something together? Or just want to say hi?\n\nYou can find me on the platforms below — I'm always open to chat, collaborate or explore new ideas. Let's connect.\n\nAlways curious. Always building."
@@ -237,22 +203,61 @@
         ],
         "skills": [
             {
-                "category": "Frontend",
-                "title": "React, Next.js, Astro.js, WordPress",
-                "description": "Component-based design, TailwindCSS, accessibility, responsive UX, GSAP animations"
+                "id": 1,
+                "title": "Frontend Stack",
+                "description": "React, Next.js, Astro, Tailwind, Framer Motion, GSAP, Three.js"
             },
             {
-                "category": "E-commerce",
-                "title": "WooCommerce Expert",
-                "description": "Custom themes, plugins, ERP/API integrations, payment gateways, stock sync, role-based pricing"
+                "id": 2,
+                "title": "WordPress & WooCommerce",
+                "description": "Custom plugins, Woo APIs, headless CMS, dynamic blocks, ACF, REST API"
             },
             {
-                "category": "Performance",
-                "title": "Web Optimization",
-                "description": "Lighthouse, Core Web Vitals, GTmetrix, lazy loading, caching, CI/CD with Gitflow"
+                "id": 3,
+                "title": "Backend & APIs",
+                "description": "Node.js, PHP, Express, GraphQL, Supabase, Firebase, MySQL, MongoDB, JWT, OAuth, Resend"
+            },
+            {
+                "id": 4,
+                "title": "Integrations & DevOps",
+                "description": "MercadoPago, Stripe, Google APIs, Netlify, Vercel, GA4, Tag Manager, Zapier"
             }
         ]
     },
+    "services": [
+        {
+            "id": 1,
+            "title": "Landing Pages &\nMarketing Sites",
+            "description": "High-converting, fast, animated landing pages with forms, analytics, and email integrations. Ideal for launches and lead generation.",
+            "stack": "Astro, Next.js, Tailwind, Framer Motion, Resend",
+            "image": "landing.png",
+            "alt": "Animated Marketing Landing Pages with Integrations"
+        },
+        {
+            "id": 2,
+            "title": "Custom Ecommerce\nPlatforms",
+            "description": "Tailored eCommerce or booking flows with WooCommerce, payment integration, and optimized user journeys. Built for results.",
+            "stack": "WooCommerce, Stripe, MercadoPago, WordPress, ACF",
+            "image": "ecommerce.png",
+            "alt": "Custom WooCommerce Online Store and Booking Systems"
+        },
+        {
+            "id": 3,
+            "title": "Interactive Web\nApplications",
+            "description": "Frontend-focused apps with dashboards, auth, smart forms, and media viewers. Clean code, scalable logic, smooth UX.",
+            "stack": "React, Next.js, Firebase, Supabase, Three.js",
+            "image": "apps.png",
+            "alt": "Interactive Web Apps with Auth and 3D Viewers"
+        },
+        {
+            "id": 4,
+            "title": "SaaS & Product\nStrategy",
+            "description": "From idea to MVP — helping founders (and myself) launch focused digital products. I assist with planning, validation, and execution across tech and strategy.",
+            "stack": "SaaS logic, auth systems, payments, analytics, integrations",
+            "image": "saas.png",
+            "alt": "SaaS Product Strategy and MVP Planning"
+        }
+    ],
     "portfolio": [
         {
             "id": 1,
@@ -268,7 +273,7 @@
             "solution": "Implemented a full-stack solution with React, Supabase, and TailwindCSS, integrating real-time updates, expense tracking, and task management features into a cohesive user experience.",
             "images": {
                 "portrait": "tx14poT20GdO.webp",
-                "landscape": "Lc3LTm25uqwZ.webp",
+                "landscape": "plancito.png",
                 "fullwidth": [
                     "sVpwMmXLMwwW.webp",
                     "rBkB6zdUG2vu.webp"
@@ -301,7 +306,7 @@
             "solution": "Developed the app using React Native and Firebase, enabling real-time chats, media uploads, gamification features, and a scalable backend to handle growth.",
             "images": {
                 "portrait": "haAG1CSuokNC.webp",
-                "landscape": "nRUdnIUUEcDC.webp",
+                "landscape": "gymstagram.png",
                 "fullwidth": [
                     "QuKecNjJFjik.webp",
                     "tQyrOtVs3Mn2.webp"
@@ -334,7 +339,7 @@
             "solution": "Developed using Next.js, Node.js, and integrated MercadoPago API for seamless payments. The system supports multi-user roles and dynamic scheduling rules.",
             "images": {
                 "portrait": "lCMiZXHZnDTu.webp",
-                "landscape": "W3ZACC8qYFkS.webp",
+                "landscape": "turnogram.png",
                 "fullwidth": [
                     "i94bQtr2G7xw.webp",
                     "Zt89NMcM0DBM.webp"
@@ -369,7 +374,7 @@
             "solution": "Built plugins with PHP and ACF, while creating decoupled frontends with React and Astro for lightning-fast page loads and improved SEO.",
             "images": {
                 "portrait": "G6F8Plx0ph4E.webp",
-                "landscape": "uAps1RXO43zs.webp",
+                "landscape": "plugins.png",
                 "fullwidth": [
                     "UdtIopVrUSOH.webp",
                     "WL9Z2Qsyd56d.svg"
