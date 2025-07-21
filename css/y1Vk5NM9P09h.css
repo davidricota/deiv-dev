@@ -366,7 +366,7 @@ body {
   overflow-x: unset !important;
   font: normal 400 var(--_size) / 1.4 var(--_font-default);
   text-rendering: optimizeLegibility;
-  background-color: var(--base);
+  background-color: var(--base-90);
   color: var(--t-medium);
 }
 
