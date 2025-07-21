@@ -976,24 +976,24 @@ if (main && contactSection) {
   gsap.fromTo(
     main,
     {
-      marginLeft: "0",
-      marginRight: "0",
+      marginLeft: () => (window.innerWidth >= 768 ? "0" : ""),
+      marginRight: () => (window.innerWidth >= 768 ? "0" : ""),
       borderBottomLeftRadius: "0rem",
       borderBottomRightRadius: "0rem",
       boxShadow: "none",
     },
     {
-      marginLeft: "1.5rem",
-      marginRight: "1.5rem",
+      marginLeft: () => (window.innerWidth >= 768 ? "1.5rem" : ""),
+      marginRight: () => (window.innerWidth >= 768 ? "1.5rem" : ""),
       borderBottomLeftRadius: "5rem",
       borderBottomRightRadius: "5rem",
       boxShadow: "0 25px 50px -12px rgb(0 0 0 / 0.25)",
       scrollTrigger: {
         trigger: contactSection,
-        start: "bottom bottom", // cuando el top de #contact entra al bottom del viewport
-
-        scrub: true, // animación progresiva
-        // markers: true, // descomenta para debug visual
+        start: "bottom bottom",
+        scrub: true,
+        // markers: true,
+        onRefresh: (self) => self.animation.invalidate(),
       },
       overwrite: "auto",
     }
