@@ -961,3 +961,44 @@ if (document.querySelector(".service-card")) {
     gsap.set(".service-card", { y: 0, opacity: 1 })
   );
 }
+
+// --------------------------------------------- //
+// Main Section Progressive Animation on Scroll End
+// --------------------------------------------- //
+
+// --------------------------------------------- //
+// Main Animation Triggered by Contact Section Scroll Start
+// --------------------------------------------- //
+const main = document.querySelector("main");
+const contactSection = document.querySelector("section#contact");
+
+if (main && contactSection) {
+  gsap.fromTo(
+    main,
+    {
+      marginLeft: "0",
+      marginRight: "0",
+      borderBottomLeftRadius: "0rem",
+      borderBottomRightRadius: "0rem",
+      boxShadow: "none",
+    },
+    {
+      marginLeft: "1.5rem",
+      marginRight: "1.5rem",
+      borderBottomLeftRadius: "5rem",
+      borderBottomRightRadius: "5rem",
+      boxShadow: "0 25px 50px -12px rgb(0 0 0 / 0.25)",
+      scrollTrigger: {
+        trigger: contactSection,
+        start: "bottom bottom", // cuando el top de #contact entra al bottom del viewport
+
+        scrub: true, // animación progresiva
+        // markers: true, // descomenta para debug visual
+      },
+      overwrite: "auto",
+    }
+  );
+}
+// --------------------------------------------- //
+// Main Animation Triggered by Contact Section Scroll End
+// --------------------------------------------- //
