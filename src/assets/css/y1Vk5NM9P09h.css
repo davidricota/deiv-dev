@@ -7170,12 +7170,18 @@ html[color-scheme="light"] .btn-line {
 /* ------------------------------------------------*/
 
 /* Typing Effect Styles */
+.headline__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .typing-braces {
-  font-size: calc(1.2em + 8vw);
+  font-size: calc(2.5em + 8vw);
   font-weight: 800;
   color: var(--t-bright);
   opacity: 0.8;
   line-height: 1;
+  transform: translateY(-0.1em);
 }
 
 .typing-text {
@@ -7210,7 +7216,7 @@ html[color-scheme="light"] .btn-line {
 
 @media (max-width: 900px) {
   .typing-braces {
-    font-size: calc(1em + 7vw);
+    font-size: calc(1.8em + 7vw);
   }
   .typing-text {
     font-size: calc(0.6em + 7vw);
@@ -7219,7 +7225,7 @@ html[color-scheme="light"] .btn-line {
 
 @media (max-width: 600px) {
   .typing-braces {
-    font-size: calc(0.8em + 5vw);
+    font-size: calc(1.2em + 5vw);
   }
   .typing-text {
     font-size: calc(0.5em + 5vw);

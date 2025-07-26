@@ -274,14 +274,8 @@
             "images": {
                 "portrait": "tx14poT20GdO.webp",
                 "landscape": "plancito.png",
-                "fullwidth": [
-                    "sVpwMmXLMwwW.webp",
-                    "rBkB6zdUG2vu.webp"
-                ],
-                "grid": [
-                    "huKpgxHIz8aF.webp",
-                    "7UN8pEkGGLJn.webp"
-                ]
+                "fullwidth": [],
+                "grid": []
             },
             "feedback": {
                 "author": "Deiv",
@@ -307,14 +301,8 @@
             "images": {
                 "portrait": "haAG1CSuokNC.webp",
                 "landscape": "gymstagram.png",
-                "fullwidth": [
-                    "QuKecNjJFjik.webp",
-                    "tQyrOtVs3Mn2.webp"
-                ],
-                "grid": [
-                    "NIDgxgDbz0nd.webp",
-                    "Osdnk7uVxZjy.webp"
-                ]
+                "fullwidth": [],
+                "grid": []
             },
             "feedback": {
                 "author": "Fitness Startup CEO",
@@ -340,16 +328,8 @@
             "images": {
                 "portrait": "lCMiZXHZnDTu.webp",
                 "landscape": "turnogram.png",
-                "fullwidth": [
-                    "i94bQtr2G7xw.webp",
-                    "Zt89NMcM0DBM.webp"
-                ],
-                "grid": [
-                    "kAvEFbFMkw6x.webp",
-                    "iDu5bP54f7zh.webp",
-                    "NZo8SiZzXxEZ.webp",
-                    "sB88jGWipCCq.webp"
-                ]
+                "fullwidth": [],
+                "grid": []
             },
             "feedback": {
                 "author": "Turnogram Product Manager",
@@ -375,14 +355,8 @@
             "images": {
                 "portrait": "G6F8Plx0ph4E.webp",
                 "landscape": "plugins.png",
-                "fullwidth": [
-                    "UdtIopVrUSOH.webp",
-                    "WL9Z2Qsyd56d.svg"
-                ],
-                "grid": [
-                    "TFvGMpVxfHfG.webp",
-                    "euQ6b0lIZXNh.webp"
-                ]
+                "fullwidth": [],
+                "grid": []
             },
             "feedback": {
                 "author": "Various Clients",

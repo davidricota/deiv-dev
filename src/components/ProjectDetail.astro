@@ -85,16 +85,18 @@ const { project } = Astro.props;
   <!-- Project Block - Description End -->
 
   <!-- Project Block - Illustration Fullwidth Start -->
-  <div class="project__block no-margin">
-    <div class="project__illustration-xl">
-      <Image
-        width={1234}
-        height={514}
-        src={project.images.fullwidth[0]}
-        alt="Project Illustration"
-      />
+  {project.images.fullwidth && project.images.fullwidth[0] && (
+    <div class="project__block no-margin">
+      <div class="project__illustration-xl">
+        <Image
+          width={1234}
+          height={514}
+          src={project.images.fullwidth[0]}
+          alt="Project Illustration"
+        />
+      </div>
     </div>
-  </div>
+  )}
   <!-- Project Block - Illustration Fullwidth End -->
 
   <!-- Project Block - The Challenge Start -->
@@ -115,21 +117,23 @@ const { project } = Astro.props;
   <!-- Project Block - The Challenge End -->
 
   <!-- Project Block - Illustrations Grid Start -->
-  <div class="project__block grid-block no-margin">
-    <div class="project__illustrations">
-      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-        {
-          project.images.grid.map((image, index) => (
-            <div class="grid-item">
-              <div class="project__illustration">
-                <Image width={512} height={512} src={image} alt="Work Illustration" />
+  {project.images.grid && project.images.grid.length > 0 && (
+    <div class="project__block grid-block no-margin">
+      <div class="project__illustrations">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+          {
+            project.images.grid.map((image, index) => (
+              <div class="grid-item">
+                <div class="project__illustration">
+                  <Image width={512} height={512} src={image} alt="Work Illustration" />
+                </div>
               </div>
-            </div>
-          ))
-        }
+            ))
+          }
+        </div>
       </div>
     </div>
-  </div>
+  )}
   <!-- Project Block - Illustrations Grid End -->
 
   <!-- Project Block - My Solution Start -->
@@ -150,16 +154,18 @@ const { project } = Astro.props;
   <!-- Project Block - My Solution End -->
 
   <!-- Project Block - Illustration Fullwidth Start -->
-  <div class="project__block no-margin">
-    <div class="project__illustration-xl">
-      <Image
-        width={1234}
-        height={514}
-        src={project.images.fullwidth[1]}
-        alt="Project Illustration"
-      />
+  {project.images.fullwidth && project.images.fullwidth[1] && (
+    <div class="project__block no-margin">
+      <div class="project__illustration-xl">
+        <Image
+          width={1234}
+          height={514}
+          src={project.images.fullwidth[1]}
+          alt="Project Illustration"
+        />
+      </div>
     </div>
-  </div>
+  )}
   <!-- Project Block - Illustration Fullwidth End -->
 
   <!-- Project Block - Client's Feedback Start -->
