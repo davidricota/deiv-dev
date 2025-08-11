@@ -106,10 +106,10 @@
         ],
         "contact": {
             "name": "David Verta",
-            "phone": {
+            /*  "phone": {
                 "number": "+54 9 11 3574 5491",
                 "href": "https://wa.me/5491135745491"
-            },
+            }, */
             "email": {
                 "address": "me@deiv.dev",
                 "href": "mailto:me@deiv.dev"
