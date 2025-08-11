@@ -133,11 +133,6 @@
     },
     "social": [
         {
-            "href": "https://wa.me/5491135745491",
-            "label": "Whatsapp",
-            "icon": "ph ph-whatsapp-logo"
-        },
-        {
             "href": "https://linkedin.com/in/davidverta",
             "label": "LinkedIn",
             "icon": "ph ph-linkedin-logo"
