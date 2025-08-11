@@ -660,7 +660,7 @@ $(function () {
     if ($("html").hasClass("chrome")) {
       $.smoothScroll();
     }
-  } catch (err) {}
+  } catch (err) { }
   // --------------------------------------------- //
   // Chrome Smooth Scroll End
   // --------------------------------------------- //
@@ -976,15 +976,13 @@ if (main && contactSection) {
   gsap.fromTo(
     main,
     {
-      marginLeft: () => (window.innerWidth >= 768 ? "0" : ""),
-      marginRight: () => (window.innerWidth >= 768 ? "0" : ""),
+
       borderBottomLeftRadius: "0rem",
       borderBottomRightRadius: "0rem",
       boxShadow: "none",
     },
     {
-      marginLeft: () => (window.innerWidth >= 768 ? "1.5rem" : ""),
-      marginRight: () => (window.innerWidth >= 768 ? "1.5rem" : ""),
+
       borderBottomLeftRadius: "5rem",
       borderBottomRightRadius: "5rem",
       boxShadow: "0 25px 50px -12px rgb(0 0 0 / 0.25)",
