@@ -160,13 +160,15 @@
                 "date": "2010 - 2017",
                 "title": "Technical Degree in Design, Image, and Sound",
                 "source": "Escuela de Artes Visuales Antonio Berni",
-                "link": "#0"
+                "link": "#0",
+                "description": "A three-year technical degree focused on the digital treatment of image and sound, emphasizing audiovisual production, multimedia integration, and visual language in motion."
             },
             {
                 "date": "2005 - 2008",
                 "title": "Multimedia Design",
                 "source": "Escuela Da Vinci",
-                "link": "#0"
+                "link": "#0",
+                "description": " A pioneering program in Latin America that blends art, technology, and creativity. The curriculum covers graphic design, digital illustration, 3D animation, audiovisual post-production, virtual reality, web development, and interactive experiences."
             }
         ],
         "experience": [
@@ -262,6 +264,14 @@
             "description": "Plancito.com is a social event planning app designed to simplify group gatherings. It allows users to create events, manage invites, collaborate on playlists, split expenses, and organize tasks seamlessly.",
             "challenge": "Building a collaborative, real-time platform that handles multiple event management features while keeping the UX intuitive and mobile-friendly.",
             "solution": "Implemented a full-stack solution with React, Supabase, and TailwindCSS, integrating real-time updates, expense tracking, and task management features into a cohesive user experience.",
+            "technologies": [
+                "React",
+                "Zustand",
+                "TanStack Query",
+                "Supabase Actions",
+                "TailwindCSS",
+                "YouTube API"
+            ],
             "images": {
                 "portrait": "tx14poT20GdO.webp",
                 "landscape": "plancito.png",
@@ -285,10 +295,20 @@
             "type": "Mobile App",
             "date": "01.05.2025",
             "role": "Lead Developer & UX Designer",
-            "client": "Fitness Startup",
+            "client": "Personal Project",
             "description": "Gymstagram is a community-driven fitness social network where users can share workouts, progress photos, and motivate each other with challenges and achievements.",
             "challenge": "Creating a performant, engaging social platform focused on fitness, while ensuring privacy and smooth multimedia content sharing.",
             "solution": "Developed the app using Next.js and Firebase, enabling real-time chats, media uploads, gamification features, and a scalable backend to handle growth.",
+            "technologies": [
+                "Next.js",
+                "Node.js",
+                "Express",
+                "Vercel",
+                "GitLab Pipelines",
+                "MongoDB",
+                "Firebase Auth",
+                "Resend"
+            ],
             "images": {
                 "portrait": "haAG1CSuokNC.webp",
                 "landscape": "gymstagram.png",
@@ -312,10 +332,21 @@
             "type": "Scheduling Platform",
             "date": "20.03.2025",
             "role": "Fullstack Developer",
-            "client": "Turnogram Inc.",
+            "client": "Personal Project",
             "description": "Turnogram is a platform to manage appointments for professionals and studios, enabling booking, calendar sync, payment integration, and client management.",
             "challenge": "Building a flexible and scalable appointment system supporting multiple professions, time zones, and payment gateways.",
             "solution": "Developed using Next.js, Node.js, and integrated MercadoPago API for seamless payments. The system supports multi-user roles and dynamic scheduling rules.",
+            "technologies": [
+                "Astro",
+                "TailwindCSS",
+                "shadcn/ui",
+                "Netlify",
+                "MercadoPago API",
+                "Google Calendar API",
+                "Turso DB",
+                "Firebase Auth",
+                "Resend"
+            ],
             "images": {
                 "portrait": "lCMiZXHZnDTu.webp",
                 "landscape": "turnogram.png",
@@ -343,6 +374,13 @@
             "description": "Development of custom WordPress plugins to extend CMS capabilities, combined with headless JavaScript frontends for high-performance landing pages.",
             "challenge": "Balancing the power of WordPress backend flexibility with modern, fast frontend experiences using React and Astro.",
             "solution": "Built plugins with PHP and ACF, while creating decoupled frontends with React and Astro for lightning-fast page loads and improved SEO.",
+            "technologies": [
+                "WordPress",
+                "PHP",
+                "Advanced Custom Fields (ACF)",
+                "React",
+                "Astro"
+            ],
             "images": {
                 "portrait": "G6F8Plx0ph4E.webp",
                 "landscape": "plugins.png",

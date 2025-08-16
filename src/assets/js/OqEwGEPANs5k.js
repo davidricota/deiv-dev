@@ -208,67 +208,65 @@ if (toTop) {
 // --------------------------------------------- //
 // Stacking Cards Start
 // --------------------------------------------- //
-window.addEventListener("DOMContentLoaded", () => {
-  let scrollTriggerInstance;
+let scrollTriggerInstance;
 
-  function initStack() {
-    const cards = document.querySelectorAll(".stack-item");
-    const stickySpace = document.querySelector(".stack-offset");
-    const animation = gsap.timeline();
-    let cardWidth;
+function initStack() {
+  const cards = document.querySelectorAll(".stack-item");
+  const stickySpace = document.querySelector(".stack-offset");
+  const animation = gsap.timeline();
+  let cardWidth;
 
-    if (cards.length && stickySpace) {
-      function initCards() {
-        animation.clear();
-        cardWidth = cards[0].offsetWidth;
-        cards.forEach((card, index) => {
-          if (index > 0) {
-            gsap.set(card, { x: index * cardWidth });
-            animation.to(card, { x: 0, duration: index * 0.5, ease: "none" }, 0);
-          }
-        });
-      }
-      initCards();
-
-      scrollTriggerInstance = ScrollTrigger.create({
-        trigger: ".stack-wrapper",
-        start: "top top",
-        pin: true,
-        end: () => `+=${cards.length * cardWidth + stickySpace.offsetWidth}`,
-        scrub: true,
-        animation: animation,
-        invalidateOnRefresh: true,
+  if (cards.length && stickySpace) {
+    function initCards() {
+      animation.clear();
+      cardWidth = cards[0].offsetWidth;
+      cards.forEach((card, index) => {
+        if (index > 0) {
+          gsap.set(card, { x: index * cardWidth });
+          animation.to(card, { x: 0, duration: index * 0.5, ease: "none" }, 0);
+        }
       });
-
-      ScrollTrigger.addEventListener("refreshInit", initCards);
-      ScrollTrigger.refresh();
     }
-  }
+    initCards();
 
-  function destroyStack() {
-    if (scrollTriggerInstance) {
-      scrollTriggerInstance.kill();
-      scrollTriggerInstance = null;
+    scrollTriggerInstance = ScrollTrigger.create({
+      trigger: ".stack-wrapper",
+      start: "top top",
+      pin: true,
+      end: () => `+=${cards.length * cardWidth + stickySpace.offsetWidth}`,
+      scrub: true,
+      animation: animation,
+      invalidateOnRefresh: true,
+    });
+
+    ScrollTrigger.addEventListener("refreshInit", initCards);
+    ScrollTrigger.refresh();
+  }
+}
+
+function destroyStack() {
+  if (scrollTriggerInstance) {
+    scrollTriggerInstance.kill();
+    scrollTriggerInstance = null;
+  }
+  gsap.set(".stack-item", { clearProps: "all" });
+}
+
+function checkViewport() {
+  if (window.innerWidth >= 768) {
+    if (!scrollTriggerInstance) {
+      initStack();
     }
-    gsap.set(".stack-item", { clearProps: "all" });
+  } else {
+    destroyStack();
   }
+}
 
-  function checkViewport() {
-    if (window.innerWidth >= 768) {
-      if (!scrollTriggerInstance) {
-        initStack();
-      }
-    } else {
-      destroyStack();
-    }
-  }
+// Inicializar
+checkViewport();
 
-  // Inicializar
-  checkViewport();
-
-  // Revisión en cada resize
-  window.addEventListener("resize", checkViewport);
-});
+// Revisión en cada resize
+window.addEventListener("resize", checkViewport);
 
 // --------------------------------------------- //
 // Stacking Cards End

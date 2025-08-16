@@ -4,7 +4,9 @@
   <defs>
     <style>
       .st0 {
-        fill: #fff;
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
       }
     </style>
   </defs>
