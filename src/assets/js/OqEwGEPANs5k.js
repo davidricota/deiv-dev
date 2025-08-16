@@ -208,39 +208,68 @@ if (toTop) {
 // --------------------------------------------- //
 // Stacking Cards Start
 // --------------------------------------------- //
-const cards = document.querySelectorAll(".stack-item");
-const stickySpace = document.querySelector(".stack-offset");
-const animation = gsap.timeline();
-let cardWidth;
+window.addEventListener("DOMContentLoaded", () => {
+  let scrollTriggerInstance;
 
-if (cards.length && stickySpace) {
-  function initCards() {
-    animation.clear();
-    cardWidth = cards[0].offsetWidth;
-    //console.log("initCards()", cardWidth);
-    cards.forEach((card, index) => {
-      if (index > 0) {
-        gsap.set(card, { x: index * cardWidth });
-        animation.to(card, { x: 0, duration: index * 0.5, ease: "none" }, 0);
+  function initStack() {
+    const cards = document.querySelectorAll(".stack-item");
+    const stickySpace = document.querySelector(".stack-offset");
+    const animation = gsap.timeline();
+    let cardWidth;
+
+    if (cards.length && stickySpace) {
+      function initCards() {
+        animation.clear();
+        cardWidth = cards[0].offsetWidth;
+        cards.forEach((card, index) => {
+          if (index > 0) {
+            gsap.set(card, { x: index * cardWidth });
+            animation.to(card, { x: 0, duration: index * 0.5, ease: "none" }, 0);
+          }
+        });
       }
-    });
+      initCards();
+
+      scrollTriggerInstance = ScrollTrigger.create({
+        trigger: ".stack-wrapper",
+        start: "top top",
+        pin: true,
+        end: () => `+=${cards.length * cardWidth + stickySpace.offsetWidth}`,
+        scrub: true,
+        animation: animation,
+        invalidateOnRefresh: true,
+      });
+
+      ScrollTrigger.addEventListener("refreshInit", initCards);
+      ScrollTrigger.refresh();
+    }
   }
-  initCards();
 
-  ScrollTrigger.create({
-    trigger: ".stack-wrapper",
-    start: "top top",
-    pin: true,
-    end: () => `+=${cards.length * cardWidth + stickySpace.offsetWidth}`,
-    scrub: true,
-    animation: animation,
-    //markers: true,
-    invalidateOnRefresh: true,
-  });
+  function destroyStack() {
+    if (scrollTriggerInstance) {
+      scrollTriggerInstance.kill();
+      scrollTriggerInstance = null;
+    }
+    gsap.set(".stack-item", { clearProps: "all" });
+  }
 
-  ScrollTrigger.addEventListener("refreshInit", initCards);
-  ScrollTrigger.refresh();
-}
+  function checkViewport() {
+    if (window.innerWidth >= 768) {
+      if (!scrollTriggerInstance) {
+        initStack();
+      }
+    } else {
+      destroyStack();
+    }
+  }
+
+  // Inicializar
+  checkViewport();
+
+  // Revisión en cada resize
+  window.addEventListener("resize", checkViewport);
+});
+
 // --------------------------------------------- //
 // Stacking Cards End
 // --------------------------------------------- //
@@ -660,7 +689,7 @@ $(function () {
     if ($("html").hasClass("chrome")) {
       $.smoothScroll();
     }
-  } catch (err) { }
+  } catch (err) {}
   // --------------------------------------------- //
   // Chrome Smooth Scroll End
   // --------------------------------------------- //
@@ -976,13 +1005,11 @@ if (main && contactSection) {
   gsap.fromTo(
     main,
     {
-
       borderBottomLeftRadius: "0rem",
       borderBottomRightRadius: "0rem",
       boxShadow: "none",
     },
     {
-
       borderBottomLeftRadius: "5rem",
       borderBottomRightRadius: "5rem",
       boxShadow: "0 25px 50px -12px rgb(0 0 0 / 0.25)",
