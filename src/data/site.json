@@ -261,9 +261,9 @@
             "date": "15.06.2025",
             "role": "Founder & Fullstack Developer",
             "client": "Personal Project",
-            "description": "Plancito.com is a social event planning app designed to simplify group gatherings. It allows users to create events, manage invites, collaborate on playlists, split expenses, and organize tasks seamlessly.",
-            "challenge": "Building a collaborative, real-time platform that handles multiple event management features while keeping the UX intuitive and mobile-friendly.",
-            "solution": "Implemented a full-stack solution with React, Supabase, and TailwindCSS, integrating real-time updates, expense tracking, and task management features into a cohesive user experience.",
+            "description": "Plancito.com is a collaborative event planning app designed to make group gatherings seamless. It enables users to create events, manage invites, organize playlists via YouTube, split expenses, and coordinate tasks effortlessly.",
+            "challenge": "Designing a real-time collaborative platform that balances multiple features such as expense tracking, polls, and playlists without overwhelming the user experience.",
+            "solution": "Developed with React for the UI and Supabase for the backend, using Zustand for state management, TanStack Query for data synchronization, and Supabase Actions for YouTube video integration. Styled with TailwindCSS for a consistent and mobile-first design.",
             "technologies": [
                 "React",
                 "Zustand",
@@ -283,7 +283,7 @@
                 "avatar": "fkV97TVC0hBz.webp",
                 "position": "Founder",
                 "rating": 5,
-                "text": "Plancito.com is the product of my passion for building tools that make social planning effortless and fun."
+                "text": "Plancito.com reflects my passion for creating collaborative tools that make planning with friends smooth and fun."
             },
             "projectUrl": "https://plancito.com"
         },
@@ -291,14 +291,14 @@
             "id": 2,
             "slug": "gymstagram",
             "title": "Gymstagram",
-            "tagline": "Fitness community • Next.js + Firebase",
+            "tagline": "Trainer management • Next.js + Firebase",
             "type": "Mobile App",
             "date": "01.05.2025",
             "role": "Lead Developer & UX Designer",
             "client": "Personal Project",
-            "description": "Gymstagram is a community-driven fitness social network where users can share workouts, progress photos, and motivate each other with challenges and achievements.",
-            "challenge": "Creating a performant, engaging social platform focused on fitness, while ensuring privacy and smooth multimedia content sharing.",
-            "solution": "Developed the app using Next.js and Firebase, enabling real-time chats, media uploads, gamification features, and a scalable backend to handle growth.",
+            "description": "Gymstagram is a management platform built for personal trainers to organize and track their clients' workouts. Trainers can create and assign routines, while clients access and follow their personalized plans through a simple interface.",
+            "challenge": "Building a system that gives trainers full control of their client base and routines, while ensuring clients can seamlessly follow workouts on their own devices.",
+            "solution": "Implemented with Next.js and Node.js on the frontend/backend, using Express for the API and MongoDB for persistent data. Authentication is powered by Firebase Auth, while GitLab pipelines automate CI/CD for deployments on Vercel. Email notifications are handled via Resend.",
             "technologies": [
                 "Next.js",
                 "Node.js",
@@ -320,7 +320,7 @@
                 "avatar": "Lp5lj6gS26qU.webp",
                 "position": "Client",
                 "rating": 5,
-                "text": "Gymstagram transformed our community engagement and grew our user base exponentially."
+                "text": "Gymstagram gave our trainers an efficient tool to manage clients and routines, improving both engagement and retention."
             },
             "projectUrl": "https://gymstagram.ar"
         },
@@ -328,14 +328,14 @@
             "id": 3,
             "slug": "turnogram",
             "title": "Turnogram",
-            "tagline": "Smart scheduling • Next.js + MercadoPago",
+            "tagline": "Smart scheduling • Astro + MercadoPago",
             "type": "Scheduling Platform",
             "date": "20.03.2025",
             "role": "Fullstack Developer",
             "client": "Personal Project",
-            "description": "Turnogram is a platform to manage appointments for professionals and studios, enabling booking, calendar sync, payment integration, and client management.",
-            "challenge": "Building a flexible and scalable appointment system supporting multiple professions, time zones, and payment gateways.",
-            "solution": "Developed using Next.js, Node.js, and integrated MercadoPago API for seamless payments. The system supports multi-user roles and dynamic scheduling rules.",
+            "description": "Turnogram is a flexible scheduling and CRM platform tailored for professionals and studios. It enables users to manage appointments, sync calendars, integrate payments, and maintain client relationships in one place.",
+            "challenge": "Creating a scalable system that supports diverse professions, handles different time zones, and integrates secure payments while keeping the booking flow simple.",
+            "solution": "Built with Astro for a fast frontend, styled with TailwindCSS and shadcn/ui components. Payments are powered by MercadoPago, with calendar sync via Google Calendar API. Authentication is managed with Firebase Auth, Turso DB stores relational data, and transactional emails are sent through Resend.",
             "technologies": [
                 "Astro",
                 "TailwindCSS",
@@ -358,7 +358,7 @@
                 "avatar": "oCArFB4XWIKr.webp",
                 "position": "Client",
                 "rating": 5,
-                "text": "Turnogram streamlined our booking process and significantly improved customer satisfaction."
+                "text": "Turnogram simplified our scheduling workflow and improved the overall client experience."
             },
             "projectUrl": "https://turnogram.netlify.app/"
         },
@@ -371,9 +371,9 @@
             "date": "Ongoing",
             "role": "Plugin Developer & Frontend Engineer",
             "client": "Various Clients",
-            "description": "Development of custom WordPress plugins to extend CMS capabilities, combined with headless JavaScript frontends for high-performance landing pages.",
-            "challenge": "Balancing the power of WordPress backend flexibility with modern, fast frontend experiences using React and Astro.",
-            "solution": "Built plugins with PHP and ACF, while creating decoupled frontends with React and Astro for lightning-fast page loads and improved SEO.",
+            "description": "Custom WordPress plugins combined with headless landing pages for high-performance marketing. Projects included developing bespoke plugins, extending ACF features, and connecting WooCommerce with modern frontends.",
+            "challenge": "Maintaining WordPress flexibility while delivering the performance and SEO benefits of modern JavaScript frameworks.",
+            "solution": "Developed plugins in PHP and ACF to extend CMS functionality. Built decoupled frontends in React and Astro for optimized performance, faster load times, and smooth integration with marketing workflows.",
             "technologies": [
                 "WordPress",
                 "PHP",
