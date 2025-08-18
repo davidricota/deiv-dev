@@ -213,7 +213,7 @@
             {
                 "id": 4,
                 "title": "Integrations & DevOps",
-                "description": "MercadoPago, Stripe, Google APIs, Netlify, Vercel, GA4, Tag Manager, Zapier"
+                "description": "MercadoPago, Stripe, Google APIs, Netlify, Vercel, GA4, Tag Manager"
             }
         ]
     },
