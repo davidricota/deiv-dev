@@ -1490,8 +1490,7 @@ blockquote {
   -moz-border-radius: var(--_radius-s);
   border-radius: var(--_radius-s);
   background-color: rgba(0, 0, 0, 0.03);
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
+
   color: var(--t-bright);
   font-size: 1.8rem;
   z-index: 9;
@@ -1511,10 +1510,6 @@ blockquote {
 @media only screen and (min-width: 1200px) {
   .btn-to-top {
     font-size: 1.9rem;
-  }
-  .no-touch .btn-to-top:hover {
-    -webkit-backdrop-filter: blur(6px);
-    backdrop-filter: blur(6px);
   }
 }
 @media only screen and (min-width: 1400px) {
@@ -3989,8 +3984,7 @@ form textarea:required:valid {
   display: flex;
 
   overflow: hidden;
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
+
   -moz-border-radius: var(--_radius-s);
   border-radius: var(--_radius-s);
   z-index: 100;
@@ -4044,10 +4038,7 @@ form textarea:required:valid {
   justify-content: center;
   width: 4rem;
   height: 4rem;
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
-  -moz-border-radius: var(--_radius-s);
-  border-radius: var(--_radius-s);
+
   overflow: hidden;
   z-index: 100;
 }

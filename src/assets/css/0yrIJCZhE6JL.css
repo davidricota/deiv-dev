@@ -53939,28 +53939,6 @@ body.vegas-container > .vegas-slide {
   z-index: -1;
 }
 
-/* Target Safari IOS7+ in order to add 76px */
-/*******************************************/
-/* blur transition */
-/*******************************************/
-.vegas-transition-blur,
-.vegas-transition-blur2 {
-  opacity: 0;
-  -webkit-filter: blur(32px) brightness(1.01);
-  filter: blur(32px) brightness(1.01);
-}
-
-.vegas-transition-blur-in,
-.vegas-transition-blur2-in {
-  opacity: 1;
-  -webkit-filter: blur(0px) brightness(1.01);
-  filter: blur(0px) brightness(1.01);
-}
-
-.vegas-transition-blur2-out {
-  opacity: 0;
-}
-
 /*******************************************/
 /* burn transition */
 /*******************************************/

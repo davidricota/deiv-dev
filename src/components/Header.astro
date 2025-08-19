@@ -5,14 +5,14 @@ import Logo from "@/components/Logo.astro";
 // Componente Header para el sitio
 ---
 
-<header id="header" class="w-full fixed top-16 loading__fade z-20">
+<header id="header" class="w-full fixed top-16 z-20">
   <div class="container flex justify-between items-center">
     <Logo />
 
     <div class="header">
       <!-- Navigation Menu Start -->
       <div class="header__navigation flex justify-center">
-        <nav id="menu" class="menu" role="navigation" aria-label="Main navigation">
+        <nav id="menu" class="menu loading__fade" role="navigation" aria-label="Main navigation">
           <ul class="menu__list d-flex justify-content-start">
             <li class="menu__item">
               <a class="menu__link btn" href="#home">

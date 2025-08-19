@@ -143,6 +143,11 @@
             "icon": "ph ph-envelope"
         },
         {
+            "href": "https://calendar.app.google/ctxexGGKBvcP6v278",
+            "label": "Meet 1:1",
+            "icon": "ph ph-headset"
+        },
+        {
             "href": "https://github.com/davidricota",
             "label": "GitHub",
             "icon": "ph ph-github-logo"

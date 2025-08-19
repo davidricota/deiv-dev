@@ -98,7 +98,13 @@ function pageAppearance() {
     ">-=1.1"
   );
   gsap.set(fadeInItems, { opacity: 0 });
-  gsap.to(fadeInItems, { duration: 0.8, ease: "none", opacity: 1, delay: 3.2 });
+  gsap.to(fadeInItems, {
+    duration: 0.8,
+    ease: "none",
+    opacity: 1,
+    delay: 3.2,
+    backdropFilter: "blur(1rem)",
+  });
 }
 // --------------------------------------------- //
 // Loader & Loading Animation End
