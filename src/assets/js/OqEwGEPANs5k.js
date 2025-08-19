@@ -67,13 +67,15 @@ function startLoader() {
   }
   updateCounter();
 }
-startLoader();
+//startLoader();
 
-imgLoad.on("done", (instance) => {
-  hideLoader();
+/* imgLoad.on("done", (instance) => {
+  //hideLoader();
+  document.getElementById("loader").classList.add("loaded");
   pageAppearance();
-});
-
+}); */
+document.getElementById("loader").classList.add("loaded");
+pageAppearance();
 function hideLoader() {
   gsap.to(".loader__count", { duration: 0.8, ease: "power2.in", y: "100%", delay: 1.8 });
   gsap.to(".loader__wrapper", { duration: 0.8, ease: "power4.in", y: "-100%", delay: 2.2 });
@@ -83,8 +85,8 @@ function hideLoader() {
 }
 
 function pageAppearance() {
-  gsap.set(loadingItems, { opacity: 0 });
-  gsap.to(
+  //gsap.set(loadingItems, { opacity: 0 });
+  /* gsap.to(
     loadingItems,
     {
       duration: 1.1,
@@ -96,13 +98,13 @@ function pageAppearance() {
       stagger: 0.05,
     },
     ">-=1.1"
-  );
+  ); */
   gsap.set(fadeInItems, { opacity: 0 });
   gsap.to(fadeInItems, {
     duration: 0.8,
     ease: "none",
     opacity: 1,
-    delay: 3.2,
+
     backdropFilter: "blur(1rem)",
   });
 }
