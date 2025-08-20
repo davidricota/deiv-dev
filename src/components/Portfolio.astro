@@ -1,5 +1,7 @@
 ---
 import { portfolio } from "@/data/site.js";
+import { Image } from "astro:assets";
+
 // Componente Portfolio para la sección de portfolio
 ---
 
@@ -30,9 +32,9 @@ import { portfolio } from "@/data/site.js";
           portfolio.map((project, index) => (
             <div class="stack-item">
               <a
+                aria-label={project.title}
                 href={`/portfolio/${project.slug}`}
                 class="portfolio-stack__inner popup-trigger relative dynamic-bg"
-                style={`--bg-url: url('${typeof project.images.landscape === "string" ? project.images.landscape : (project.images.landscape as any).src}')`}
               >
                 <div class="absolute bottom-0 left-0 w-full px-10 py-12 bg-gradient-to-t from-black/35 from-25% to-black/0 to-100%">
                   <h3 class="font-bold !text-white">{project.title}</h3>
@@ -41,6 +43,13 @@ import { portfolio } from "@/data/site.js";
                     <span class="tagline-tech"> • {project.tagline.split(" • ")[1]}</span>
                   </p>
                 </div>
+                <Image
+                  width={800}
+                  height={533}
+                  src={project.images.landscape}
+                  alt={project.title}
+                  class="service-image size-full object-cover rounded-4xl "
+                />
               </a>
             </div>
           ))

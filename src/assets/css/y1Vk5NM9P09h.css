@@ -6,7 +6,7 @@
  * Build Date: August 2025
  * Last Update: August 2025
  * Author: Deiv
- * Author URI: https://tusitio.com
+ * Author URI: https://deiv.dev
  */
 /*! File name: main.css
  * ------------------------------------------------
@@ -47,92 +47,6 @@
  * ------------------------------------------------ */
 /* ------------------------------------------------*/
 
-/* ------------------------------------------------*/
-/* Template Backgrounds Start */
-/* ------------------------------------------------*/
-.main-image-1 {
-  background-image: url("../images/m1vZ1zjhegr4.webp");
-}
-
-.main-image-2 {
-  background-image: url("../images/IRrMeuLjYINN.webp");
-}
-
-.about-image-1 {
-  background-image: url("../images/3853802a-43fe-4e1c-a0aa-1a1e52a5b2dd.JPG");
-}
-
-.marquee-image-single-1 {
-  background-image: url("../images/sPFOKHs4syT3.webp");
-}
-
-.marquee-image-single-2 {
-  background-image: url("../images/bfYq5Lb9oJf7.webp");
-}
-
-.marquee-image-single-3 {
-  background-image: url("../images/EfEx6x7YpgQv.webp");
-}
-
-.marquee-image-single-4 {
-  background-image: url("../images/uDQGPOZEGG5k.webp");
-}
-
-.marquee-image-single-5 {
-  background-image: url("../images/iTLuWZk55j8P.webp");
-}
-
-.marquee-image-single-6 {
-  background-image: url("../images/1GCzRGGAfm8F.webp");
-}
-
-.portfolio-item-1 {
-  background-image: url("../images/jwzDGtEspra8.webp");
-}
-
-.portfolio-item-2 {
-  background-image: url("../images/6WsHi1ytXRYj.webp");
-}
-
-.portfolio-item-3 {
-  background-image: url("../images/RhWfgOi5LI6t.webp");
-}
-
-.portfolio-item-4 {
-  background-image: url("../images/MRoeul7o75u6.webp");
-}
-
-.portfolio-item-5 {
-  background-image: url("../images/4dgURPtPMSLI.webp");
-}
-
-.portfolio-item-6 {
-  background-image: url("../images/FR2q01k9lYI2.webp");
-}
-
-.portfolio-item-7 {
-  background-image: url("../images/HuL1BGpG6DPV.webp");
-}
-
-.portfolio-item-8 {
-  background-image: url("../images/FwFzYRdFG0KX.webp");
-}
-
-.project-image-bg-1 {
-  background-image: url("../img/works/work-single-1/1920x1280_w01.webp");
-}
-
-.project-image-bg-2 {
-  background-image: url("../img/works/work-single-1/1920x1080_w01-01.webp");
-}
-
-.project-image-bg-3 {
-  background-image: url("../img/works/work-single-1/1920x1080_w01-02.webp");
-}
-
-/* ------------------------------------------------*/
-/* Template Backgrounds End */
-/* ------------------------------------------------*/
 /* ------------------------------------------------*/
 /* Basic Styles Start */
 /* ------------------------------------------------*/
@@ -5039,15 +4953,7 @@ html[color-scheme="light"] .btn-line {
   -moz-background-size: cover;
   background-size: cover;
 }
-.item.image-1 {
-  background-image: url("../images/sPFOKHs4syT3.webp");
-}
-.item.image-2 {
-  background-image: url("../images/bfYq5Lb9oJf7.webp");
-}
-.item.image-3 {
-  background-image: url("../images/EfEx6x7YpgQv.webp");
-}
+
 .item img {
 }
 @media only screen and (min-width: 768px) {
