@@ -29,9 +29,9 @@
   --_animspeed-slow: 0.6s;
   --_animbezier: cubic-bezier(0.23, 0.65, 0.74, 1.09);
   /* light color scheme */
-  --base--light: #faf9f6;
+  --base--light: #babec8;
   --base-rgb--light: 186, 190, 200;
-  --base-90--light: #faf9f6;
+  --base-90--light: rgba(208, 210, 215, 0.936);
   --base-shade--light: #989ba3;
   --base-tint--light: #d8dde7;
   --stroke-controls--light: #2c2e34;
