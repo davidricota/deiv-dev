@@ -182,23 +182,23 @@
                 "title": "Full-stack Developer",
                 "source": "Ameba Creative Studio",
                 "link": "#0",
-                "description": "Delivered full-stack solutions across 20+ WordPress and WooCommerce projects. Developed e-commerce stores with custom plugins and ERP/API integrations. Built responsive landing pages using Astro.js and Next.js."
+                "description": "Delivered full-stack solutions across 20+ WordPress and WooCommerce projects, focusing on performance and scalability. Developed custom plugins, ERP/API integrations, and role-based e-commerce features. Built modern, responsive landing pages using Astro.js and Next.js."
             },
             {
                 "date": "2019 - 2022",
                 "title": "Software Engineer / Web Community Lead",
                 "source": "Cognizant Softvision",
                 "link": "#0",
-                "description": "Maintained corporate sites using WordPress. Improved layout, performance, and content structure. Implemented A/B testing integration, analytics, and visual enhancements."
+                "description": "Implemented a new design system while migrating corporate sites from WordPress to a headless architecture. Enhanced performance, accessibility, and scalability. Improved financial communication at Antares by integrating interactive charts, A/B testing, and analytics-driven layouts."
             },
             {
                 "date": "2018 - 2019",
                 "title": "Frontend Developer",
                 "source": "8a Marketing",
                 "link": "#0",
-                "description": "Created animated banners and campaign landing pages for Google using GSAP and HTML5. Developed custom WordPress landing pages for marketing initiatives."
+                "description": "Created animated banners and campaign landing pages for Google using GSAP and HTML5. Designed and developed custom WordPress landing pages tailored to marketing initiatives."
             }
-        ],
+        ]
         "skills": [
             {
                 "id": 1,
