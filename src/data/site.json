@@ -163,7 +163,7 @@
         "education": [
             {
                 "date": "2010 - 2017",
-                "title": "Technical Degree in Design, Image, and Sound",
+                "title": "Digital Media Arts",
                 "source": "Escuela de Artes Visuales Antonio Berni",
                 "link": "#0",
                 "description": "A three-year technical degree focused on the digital treatment of image and sound, emphasizing audiovisual production, multimedia integration, and visual language in motion."
@@ -177,6 +177,13 @@
             }
         ],
         "experience": [
+            {
+                "date": "2025 - Present",
+                "title": "Full-stack Developer",
+                "source": "Jumpfactor ",
+                "link": "#0",
+                "description": ""
+            },
             {
                 "date": "2022 - 2025",
                 "title": "Full-stack Developer",
