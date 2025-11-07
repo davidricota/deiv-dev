@@ -1,0 +1,61 @@
+---
+import ColorSwitch from "@/components/ColorSwitch.astro";
+import Logo from "@/components/Logo.astro";
+
+// Componente Header para el sitio
+---
+
+<header id="header" class="w-full fixed top-16 z-20">
+  <div class="container flex justify-between items-center">
+    <Logo />
+
+    <div class="header">
+      <!-- Navigation Menu Start -->
+      <div class="header__navigation flex justify-center">
+        <nav id="menu" class="menu loading__fade" role="navigation" aria-label="Main navigation">
+          <ul class="menu__list d-flex justify-content-start">
+            <li class="menu__item">
+              <a class="menu__link btn" href="#home">
+                <span class="menu__caption">Home</span>
+                <i class="ph ph-house-simple"></i>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link btn" href="#services">
+                <span class="menu__caption">Services</span>
+                <i class="ph ph-sticker"></i>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link btn" href="#portfolio">
+                <span class="menu__caption">Cases Studies</span>
+                <i class="ph ph-squares-four"></i>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link btn" href="#about">
+                <span class="menu__caption">About Me</span>
+                <i class="ph ph-user"></i>
+              </a>
+            </li>
+
+            <li class="menu__item">
+              <a class="menu__link btn" href="#resume">
+                <span class="menu__caption">Expertise</span>
+                <i class="ph ph-article"></i>
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link btn" href="#contact">
+                <span class="menu__caption">Contact</span>
+                <i class="ph ph-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Navigation Menu End -->
+    </div>
+    <ColorSwitch />
+  </div>
+</header>

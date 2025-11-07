@@ -1,0 +1,23 @@
+---
+// Componente Contact
+import SocialLinks from "./SocialLinks.astro";
+import { social, content } from "@/data/site.js";
+---
+
+<section id="contact" class="contact inner-grid-bottom pb-0">
+  <div class="container">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-12">
+      <div class="md:col-span-2">
+        <span class="section-name icon-right animate-in-up">
+          <span class="section-name-caption py-8">{content.sections.contact.name}</span>
+          <i class="ph ph-arrow-down-right"></i>
+        </span>
+      </div>
+      <div class="md:col-span-8 flex flex-col gap-12 md:gap-24">
+        <h2 class="reveal-type animate-in-up">{content.sections.contact.title}</h2>
+        <p class="animate-in-up" set:html={content.sections.contact.description} />
+        <SocialLinks links={social} />
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,52 @@
+---
+// Componente About para la sección "About me"
+import { about } from "@/data/site.js";
+import AchievementSection from "./AchievementSection.astro";
+---
+
+<section id="about" class="about">
+  <div class="container">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-12">
+      <div class="md:col-span-2">
+        <span class="section-name icon-right animate-in-up">
+          <span class="section-name-caption py-8">About me</span>
+          <i class="ph ph-arrow-down-right"></i>
+        </span>
+      </div>
+      <div class="md:col-span-8 flex flex-col gap-12 md:gap-36">
+        <h2 class="reveal-type animate-in-up" set:html={"My Dev's Path"} />
+        <div class="flex flex-col gap-24">
+          {
+            about.sections.map((section) => (
+              <div class="grid grid-cols-12 gap-4 items-start animate-in-up">
+                <div class="col-span-12 md:col-span-3 flex flex-col">
+                  <h3 class="heading-3 mb-2">
+                    {section.id}.{" "}
+                    <small class="block text-base font-normal opacity-75" style="font-size:50%">
+                      {section.subtitle}
+                    </small>
+                  </h3>
+                </div>
+                <div class="col-span-12 md:col-span-9">
+                  <p set:html={section.content} />
+                </div>
+              </div>
+            ))
+          }
+        </div>
+
+        <div class="flex justify-center animate-in-up">
+          <a
+            class="btn-line group border solid rounded-full px-12 py-8 flex justify-center gap-2 items-center transition"
+            href={about.cv.href}
+            target="_blank"
+          >
+            <em></em>
+            <span class="text-2xl">{about.cv.text}</span>
+            <i class="ph ph-arrow-down-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

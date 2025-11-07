@@ -1,0 +1,26 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import MainSection from "@/components/MainSection.astro";
+import Portfolio from "@/components/Portfolio.astro";
+import About from "@/components/About.astro";
+import Services from "@/components/Services.astro";
+import Resume from "@/components/Resume.astro";
+import Contact from "@/components/Contact.astro";
+import Footer from "@/components/Footer.astro";
+---
+
+<Layout title="{ .Deiv } - Fullstack Developer">
+  <Header />
+
+  <main class="flex flex-col gap-36 pb-64 z-10 relative" role="main">
+    <MainSection />
+    <Services />
+    <Portfolio />
+    <About />
+    <Resume />
+    <Contact />
+  </main>
+
+  <Footer />
+</Layout>

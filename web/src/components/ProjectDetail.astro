@@ -1,0 +1,198 @@
+---
+import { Image } from "astro:assets";
+export interface Props {
+  project: {
+    id: number;
+    slug: string;
+    title: string;
+    type: string;
+    date: string;
+    role: string;
+    client: string;
+    description: string;
+    challenge: string;
+    solution: string;
+    images: {
+      portrait: any;
+      landscape: any;
+      fullwidth: any[];
+      grid: any[];
+    };
+    feedback: {
+      author: string;
+      avatar: any;
+      position: string;
+      rating: number;
+      text: string;
+    };
+    projectUrl: string;
+  };
+}
+
+const { project } = Astro.props;
+---
+
+<div class="project rounded-2xl overflow-hidden">
+  <!-- Project Block - Title with Image Start -->
+  <div class="project__block no-padding no-margin project-image-bg">
+    <Image
+      class="object-cover w-full h-full max-h-150"
+      src={project.images.landscape}
+      alt={project.title}
+    />
+    <div class="project__title bg-gradient-to-t from-black/35 from-25% to-black/0 to-100%">
+      <h3 class="!text-white">{project.title}</h3>
+    </div>
+  </div>
+  <!-- Project Block - Title with Image End -->
+
+  <!-- Project Block - Description Start -->
+  <div class="project__block grid-block grid-items">
+    <div class="project__data">
+      <div class="grid grid-cols-1 xl:grid-cols-12 gap-8">
+        <div class="xl:col-span-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- project data single item -->
+            <div class="grid-item pdata__item">
+              <p class="data__title tagline-chapter small type-basic-160lh">Type</p>
+              <p class="data__descr small type-basic-160lh">{project.type}</p>
+            </div>
+            <!-- project data single item -->
+            <div class="grid-item pdata__item">
+              <p class="data__title tagline-chapter small type-basic-160lh">Date</p>
+              <p class="data__descr small type-basic-160lh">{project.date}</p>
+            </div>
+            <!-- project data single item -->
+            <div class="grid-item pdata__item">
+              <p class="data__title tagline-chapter small type-basic-160lh">Role</p>
+              <p class="data__descr small type-basic-160lh">{project.role}</p>
+            </div>
+            <!-- project data single item -->
+            {
+              project.client && (
+                <div class="grid-item pdata__item">
+                  <p class="data__title tagline-chapter small type-basic-160lh">Client</p>
+                  <p class="data__descr small type-basic-160lh">{project.client}</p>
+                </div>
+              )
+            }
+          </div>
+        </div>
+        <div class="xl:col-span-8 grid-item">
+          <p class="type-basic-160lh">
+            {project.description}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Project Block - Description End -->
+
+  <!-- Project Block - Illustration Fullwidth Start -->
+  {
+    project.images.fullwidth && project.images.fullwidth[0] && (
+      <div class="project__block no-margin">
+        <div class="project__illustration-xl">
+          <Image
+            width={1234}
+            height={514}
+            src={project.images.fullwidth[0]}
+            alt="Project Illustration"
+          />
+        </div>
+      </div>
+    )
+  }
+  <!-- Project Block - Illustration Fullwidth End -->
+
+  <!-- Project Block - The Challenge Start -->
+  <div class="project__block pre-grid-items">
+    <div class="project__descr">
+      <div class="grid grid-cols-1 xl:grid-cols-12 gap-8">
+        <div class="xl:col-span-4">
+          <p class="project__subtitle tagline-chapter">The challenge</p>
+        </div>
+        <div class="xl:col-span-8">
+          <p class="type-basic-160lh">
+            {project.challenge}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Project Block - The Challenge End -->
+
+  <!-- Project Block - Illustrations Grid Start -->
+  {
+    project.images.grid && project.images.grid.length > 0 && (
+      <div class="project__block grid-block no-margin">
+        <div class="project__illustrations">
+          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+            {project.images.grid.map((image, index) => (
+              <div class="grid-item">
+                <div class="project__illustration">
+                  <Image width={512} height={512} src={image} alt="Work Illustration" />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    )
+  }
+  <!-- Project Block - Illustrations Grid End -->
+
+  <!-- Project Block - My Solution Start -->
+  <div class="project__block">
+    <div class="project__descr">
+      <div class="grid grid-cols-1 xl:grid-cols-12 gap-8">
+        <div class="xl:col-span-4">
+          <p class="project__subtitle tagline-chapter">My solution</p>
+        </div>
+        <div class="xl:col-span-8">
+          <p class="type-basic-160lh">
+            {project.solution}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Project Block - My Solution End -->
+
+  <!-- Project Block - Illustration Fullwidth Start -->
+  {
+    project.images.fullwidth && project.images.fullwidth[1] && (
+      <div class="project__block no-margin">
+        <div class="project__illustration-xl">
+          <Image
+            width={1234}
+            height={514}
+            src={project.images.fullwidth[1]}
+            alt="Project Illustration"
+          />
+        </div>
+      </div>
+    )
+  }
+  <!-- Project Block - Illustration Fullwidth End -->
+
+  <!-- Project Block - Client's Feedback Start -->
+
+  <!-- Project Block - Client's Feedback End -->
+
+  <!-- Project Block - Project Link Start -->
+  <div class="project__block small-size">
+    <div class="flex justify-center">
+      <a
+        class="btn-line group border solid w-full md:w-fit rounded-full px-12 py-8 flex justify-center gap-2 items-center transition"
+        href={project.projectUrl}
+        target="_blank"
+      >
+        <em></em>
+        <span class="text-2xl">CHECK PROJECT</span>
+        <i class="ph ph-arrow-up-right"></i>
+      </a>
+    </div>
+  </div>
+  <!-- Project Block - Project Link End -->
+</div>
