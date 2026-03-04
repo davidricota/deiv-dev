@@ -5,6 +5,7 @@ import Logo from "@/components/Logo.astro";
 // Componente Header para el sitio
 ---
 
+<a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-black focus:text-white focus:rounded">Skip to main content</a>
 <header id="header" class="w-full fixed top-16 z-20">
   <div class="container flex justify-between items-center">
     <Logo />
@@ -17,38 +18,38 @@ import Logo from "@/components/Logo.astro";
             <li class="menu__item">
               <a class="menu__link btn" href="#home">
                 <span class="menu__caption">Home</span>
-                <i class="ph ph-house-simple"></i>
+                <i class="ph ph-house-simple" aria-hidden="true"></i>
               </a>
             </li>
             <li class="menu__item">
               <a class="menu__link btn" href="#services">
                 <span class="menu__caption">Services</span>
-                <i class="ph ph-sticker"></i>
+                <i class="ph ph-sticker" aria-hidden="true"></i>
               </a>
             </li>
             <li class="menu__item">
               <a class="menu__link btn" href="#portfolio">
                 <span class="menu__caption">Cases Studies</span>
-                <i class="ph ph-squares-four"></i>
+                <i class="ph ph-squares-four" aria-hidden="true"></i>
               </a>
             </li>
             <li class="menu__item">
               <a class="menu__link btn" href="#about">
                 <span class="menu__caption">About Me</span>
-                <i class="ph ph-user"></i>
+                <i class="ph ph-user" aria-hidden="true"></i>
               </a>
             </li>
 
             <li class="menu__item">
               <a class="menu__link btn" href="#resume">
                 <span class="menu__caption">Expertise</span>
-                <i class="ph ph-article"></i>
+                <i class="ph ph-article" aria-hidden="true"></i>
               </a>
             </li>
             <li class="menu__item">
               <a class="menu__link btn" href="#contact">
                 <span class="menu__caption">Contact</span>
-                <i class="ph ph-envelope"></i>
+                <i class="ph ph-envelope" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
