@@ -1,11 +1,11 @@
 {
-    "name": "Blayden* Portfolio",
-    "short_name": "Blayden*",
+    "name": "Deiv.dev",
+    "short_name": "{.Deiv}",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#141414",
     "theme_color": "#141414",
-    "description": "Portfolio de David Verta (.Deiv)",
+    "description": "Portfolio de David Verta {.Deiv}",
     "icons": [
         {
             "src": "/favicon.svg",
