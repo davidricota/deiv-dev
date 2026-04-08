@@ -62,13 +62,23 @@ const { title = "{ .Deiv }", children } = Astro.props;
     <meta name="msapplication-navbutton-color" content="#141414" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="mobile-web-app-capable" content="yes" />
+    <!-- Preload Phosphor icon font (used in header, above-fold) -->
+    <link rel="preload" href="/fonts/cuqmm7kPvq3k.woff2" as="font" type="font/woff2" crossorigin />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
     <!-- Structured Data -->
     <script type="application/ld+json">
       {
@@ -95,9 +105,9 @@ const { title = "{ .Deiv }", children } = Astro.props;
     <!-- End Google Tag Manager (noscript) -->
     <slot />
     <GlobalExtras />
-    <!-- Librerías base (jQuery, Modernizr, etc.) -->
-    <script src="/js/aKYW7MQ14znL.js" is:inline></script>
-    <script src="/js/dXrkiP81tqAv.js" is:inline></script>
-    <script src="../assets/js/OqEwGEPANs5k.js"></script>
+    <!-- Librerías base (jQuery, GSAP, Lenis, Swiper, etc.) -->
+    <script src="/js/aKYW7MQ14znL.js" defer is:inline></script>
+    <script src="/js/dXrkiP81tqAv.js" defer is:inline></script>
+    <script src="../assets/js/OqEwGEPANs5k.js" defer></script>
   </body>
 </html>
